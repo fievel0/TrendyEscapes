@@ -8,6 +8,11 @@ export default {
     extend: {
       colors: {
         'primary': '#FF9500',
+      },
+      screens: {
+        notebook: {max: '1280px'},
+        tablet: {max: '1024px'},
+        mobile: {max: '768px'},
       }
     },
   },

@@ -4,13 +4,13 @@ const Footer = () => {
     
   return (
     <footer className="w-full bg-[#f2e1cd] flex flex-col items-start justify-center gap-4 py-5">
-        <div className='w-full flex flex-wrap items-start justify-evenly mb-6'>
-            <div className="w-[250px] flex-col content-around justify-center ">
+        <div className='w-full flex mobile:flex-col items-center  justify-evenly mb-6'>
+            <div className="w-[230px] mobile:w-[250px] mobile:mb-10 flex-col content-around justify-center ">
                 <h3 className="text-xl  text-primary mb-3">Nombre Empresa</h3>
                 <p>Descubre experiencias únicas en tus vacaciones de verano, ya sea en la naturaleza exuberante, ciudades vibrantes o playas paradisíacas</p>
             </div>
 
-            <div className="w-[250px] flex flex-col items-start content-center justify-center ">
+            <div className="w-[150px] mobile:w-[250px] mobile:mb-10 flex flex-col items-start content-center justify-center ">
                 <h3 className="text-xl  text-primary mb-3">Enlaces Rápidos</h3>
                 <a href="/">Home</a>
                 <a href="/">Paquetes</a>
@@ -18,7 +18,7 @@ const Footer = () => {
                 <a href="/">Comunidad</a>
             </div>
 
-            <div className="w-[250px] flex flex-col items-start content-around justify-center ">
+            <div className="w-[230px] mobile:w-[250px] mobile:mb-10 flex flex-col items-start content-around justify-center border-solid">
                 <h3 className="text-xl  text-primary mb-3">Contacto</h3>
                 <div className="flex flex-wrap content-around justify-start gap-2">
                     <img src="../Icons/location.svg" alt="icono de ubicación" className='w-8 h-8 footerIcon' />
@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>            
             </div>
 
-            <div className="w-[250px] flex flex-col items-start content-around justify-center ">
+            <div className="w-[140px] mobile:w-[250px] mobile:mb-10 flex flex-col items-start content-around justify-center ">
                 <h3 className="text-xl  text-primary mb-3">Siguenos</h3>
                 <div className='flex flex-wrap content-around justify-start gap-4'>
                     <a href="/"><img src="../Icons/facebook.svg" alt="icono de facebook" className='w-8 h-8 footerIcon' /></a>
