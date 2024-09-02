@@ -14,11 +14,18 @@ Con Trendy Viajes, explorar el mundo y documentar cada paso del viaje nunca fue 
 <image src="./images/dkt01.png" alt="imagen de paquetes" width="600" caption="Imagen de Paquetes"/>
 
 ### Miembros del equipo
-
--   [Juan Carlos García](https://github.com/juancarlosgarcia)
--   [Juan Manuel García](https://github.com/juanmanuelgarcia)
--   [Juan Pablo Martínez](https://github.com/juanpablomartinez)
--   [Juan Pablo Martínez](https://github.com/juanpablomartinez)
+#### Frontend
+-   [Mercedes Soto Bejarano](https://github.com/MerSb)
+-   [Eneas Baroni](https://github.com/eneasbaroni)
+-   Alvaro Johansen
+#### Backend
+-   [Nicolle Rosa](https://github.com/Nicoleta0c)
+-   [Fabian Paucar](https://github.com/fievel0)
+-   Julian Peña
+-   Fabian Paucar
+-   Carlos FLores
+#### QA
+-   Jorge Peyrano
 
 ### Tecnologías utilizadas
 #### Frontend
