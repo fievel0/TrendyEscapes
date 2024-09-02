@@ -3,8 +3,8 @@ import './Footer.css'
 const Footer = () => {
     
   return (
-    <footer className="w-full bg-[#f2e1cd] flex flex-col items-start justify-center gap-4 py-5">
-        <div className='w-full flex mobile:flex-col items-center  justify-evenly mb-6'>
+    <footer className="w-screen flex flex-col items-start justify-center gap-4 py-5 border-t border-t-gray-400">
+        <div className='w-screen flex mobile:flex-col items-start mobile:items-center justify-evenly mb-6'>
             <div className="w-[230px] mobile:w-[250px] mobile:mb-10 flex-col content-around justify-center ">
                 <h3 className="text-xl  text-primary mb-3">Nombre Empresa</h3>
                 <p>Descubre experiencias únicas en tus vacaciones de verano, ya sea en la naturaleza exuberante, ciudades vibrantes o playas paradisíacas</p>
@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>            
             </div>
         </div>
-        <div className='w-[95%] m-auto border-solid border-t-2 border-t-primary mb-6'></div>
+        <div className='w-[95%] m-auto border-solid border-t border-t-gray-400 mb-6'></div>
         <p className=' w-full text-center'>© 2024 Tu Viaje. Todos los derechos reservados.</p>
     </footer>
   )

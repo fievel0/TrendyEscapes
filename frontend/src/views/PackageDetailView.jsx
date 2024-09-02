@@ -86,7 +86,7 @@ const PackageDetailView = () => {
                                 </div>
                             </div>
                         </> :
-                        <h1 className='text-3xl text-white font-bold'>Paquete no encontrado</h1>              
+                        <h1 className='text-3xl text-gray-900 font-bold'>Paquete no encontrado</h1>              
                 }
             </main>            
             <Footer/>
