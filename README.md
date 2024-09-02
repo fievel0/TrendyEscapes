@@ -15,17 +15,17 @@ Con Trendy Escapes, explorar el mundo y documentar cada paso del viaje nunca fue
 
 ### Miembros del equipo
 #### Frontend
--   [Mercedes Soto Bejarano](https://github.com/MerSb)
+-   [Mercedes Soto Bejarano](https://github.com/MerSb) - [LinkedIn](https://ar.linkedin.com/in/emilce-mercedes-soto-bejarano)
 -   [Eneas Baroni](https://github.com/eneasbaroni) - [LinkedIn](https://www.linkedin.com/in/eneasbaroni)
 -   Alvaro Johansen
 #### Backend
--   [Nicolle Rosa](https://github.com/Nicoleta0c)
+-   [Nicolle Rosa](https://github.com/Nicoleta0c) - [LinkedIn](https://www.linkedin.com/in/nicolle-rosa/)
 -   [Fabian Paucar](https://github.com/fievel0)
 -   [Julian David Peña](https://github.com/julian-pena) - [LinkedIn](https://www.linkedin.com/in/julian-pena-java)
 -   Fabian Paucar
 -   Carlos FLores
 #### QA
--   Jorge Peyrano
+-   [Jorge Peyrano](https://github.com/Japeyr) - [LinkedIn](http://www.linkedin.com/in/jorge-peyrano)
 
 ### Tecnologías utilizadas
 #### Frontend
