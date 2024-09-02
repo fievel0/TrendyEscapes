@@ -1,12 +1,12 @@
 # C20-44-n-java-react
-## Proyecto Trendy Viajes
+## Proyecto Trendy Escapes
 
 ### Descripción
 
-Trendy Viajes es una aplicación web diseñada para los apasionados del turismo y la exploración del mundo. Este blog de viajes ofrece una plataforma única donde los usuarios pueden planificar y registrar sus aventuras de manera organizada y accesible. La idea detrás de Trendy Viajes es facilitar la planificación de viajes y permitir a los viajeros mantener un historial detallado de sus experiencias, creando un diario digital de sus aventuras por el mundo.
-El objetivo principal de Trendy Viajes es proporcionar a los viajeros una herramienta que les permita seleccionar sus destinos de forma sencilla, registrar cada viaje y acceder a un historial personal de sus travesías. Esto convierte a nuestra plataforma en el compañero ideal para aquellos que desean llevar un seguimiento detallado de sus viajes, revivir sus experiencias y tener un registro permanente de sus exploraciones.
+Trendy Escapes es una aplicación web diseñada para los apasionados del turismo y la exploración del mundo. Este blog de viajes ofrece una plataforma única donde los usuarios pueden planificar y registrar sus aventuras de manera organizada y accesible. La idea detrás de Trendy Escapes es facilitar la planificación de viajes y permitir a los viajeros mantener un historial detallado de sus experiencias, creando un diario digital de sus aventuras por el mundo.
+El objetivo principal de Trendy Escapes es proporcionar a los viajeros una herramienta que les permita seleccionar sus destinos de forma sencilla, registrar cada viaje y acceder a un historial personal de sus travesías. Esto convierte a nuestra plataforma en el compañero ideal para aquellos que desean llevar un seguimiento detallado de sus viajes, revivir sus experiencias y tener un registro permanente de sus exploraciones.
 Entre las funcionalidades destacadas de la aplicación se encuentra un sistema de registro intuitivo, que permite a los usuarios crear una cuenta y personalizar su perfil de viajero. Una vez registrados, los usuarios pueden seleccionar sus próximos destinos, y cada uno de estos queda registrado en un historial personal que el usuario puede consultar en cualquier momento, permitiendo un seguimiento preciso de todos sus viajes realizados.
-Con Trendy Viajes, explorar el mundo y documentar cada paso del viaje nunca fue tan sencillo y emocionante.
+Con Trendy Escapes, explorar el mundo y documentar cada paso del viaje nunca fue tan sencillo y emocionante.
 
 ### Imágenes del proyecto
 
