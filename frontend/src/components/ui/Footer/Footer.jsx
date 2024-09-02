@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="w-screen flex flex-col items-start justify-center gap-4 py-5 border-t border-t-gray-400">
         <div className='w-screen flex mobile:flex-col items-start mobile:items-center justify-evenly mb-6'>
             <div className="w-[230px] mobile:w-[250px] mobile:mb-10 flex-col content-around justify-center ">
-                <h3 className="text-xl  text-primary mb-3">Trendy Viajes</h3>
+                <h3 className="text-xl  text-primary mb-3">Trendy Escapes</h3>
                 <p>Descubre experiencias únicas en tus vacaciones de verano, ya sea en la naturaleza exuberante, ciudades vibrantes o playas paradisíacas</p>
             </div>
 
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-wrap content-around justify-start gap-2">
                     <img src="../Icons/mail.svg" alt="icono de mail" className='w-8 h-8 footerIcon' />
-                    <p>trendyviajes@gmail.com</p>
+                    <p>trendyescapes@gmail.com</p>
                 </div>            
             </div>
 
@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='w-[95%] m-auto border-solid border-t border-t-gray-400 mb-6'></div>
-        <p className=' w-full text-center'>© 2024 Tu Viaje. Todos los derechos reservados.</p>
+        <p className=' w-full text-center'>© 2024 Trendy Escapes. Todos los derechos reservados.</p>
     </footer>
   )
 }
