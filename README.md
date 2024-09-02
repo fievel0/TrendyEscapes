@@ -17,7 +17,7 @@ Con Trendy Escapes, explorar el mundo y documentar cada paso del viaje nunca fue
 #### Frontend
 -   [Mercedes Soto Bejarano](https://github.com/MerSb) - [LinkedIn](https://ar.linkedin.com/in/emilce-mercedes-soto-bejarano)
 -   [Eneas Baroni](https://github.com/eneasbaroni) - [LinkedIn](https://www.linkedin.com/in/eneasbaroni)
--   Alvaro Johansen
+-   [Álvaro Johansen](https://github.com/Alvarojohansen) - [LinkedIn](https://www.linkedin.com/in/%C3%A1lvaro-johansen-bb147a246)
 #### Backend
 -   [Nicolle Rosa](https://github.com/Nicoleta0c) - [LinkedIn](https://www.linkedin.com/in/nicolle-rosa/)
 -   [Fabian Paucar](https://github.com/fievel0)
