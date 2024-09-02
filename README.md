@@ -16,12 +16,12 @@ Con Trendy Viajes, explorar el mundo y documentar cada paso del viaje nunca fue 
 ### Miembros del equipo
 #### Frontend
 -   [Mercedes Soto Bejarano](https://github.com/MerSb)
--   [Eneas Baroni](https://github.com/eneasbaroni)
+-   [Eneas Baroni](https://github.com/eneasbaroni) - [LinkedIn](https://www.linkedin.com/in/eneasbaroni)
 -   Alvaro Johansen
 #### Backend
 -   [Nicolle Rosa](https://github.com/Nicoleta0c)
 -   [Fabian Paucar](https://github.com/fievel0)
--   Julian Peña
+-   [Julian David Peña](https://github.com/julian-pena) - [LinkedIn](https://www.linkedin.com/in/julian-pena-java)
 -   Fabian Paucar
 -   Carlos FLores
 #### QA
