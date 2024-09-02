@@ -8,7 +8,7 @@ El objetivo principal de Trendy Viajes es proporcionar a los viajeros una herram
 Entre las funcionalidades destacadas de la aplicación se encuentra un sistema de registro intuitivo, que permite a los usuarios crear una cuenta y personalizar su perfil de viajero. Una vez registrados, los usuarios pueden seleccionar sus próximos destinos, y cada uno de estos queda registrado en un historial personal que el usuario puede consultar en cualquier momento, permitiendo un seguimiento preciso de todos sus viajes realizados.
 Con Trendy Viajes, explorar el mundo y documentar cada paso del viaje nunca fue tan sencillo y emocionante.
 
-### Imágenes del pryecto
+### Imágenes del proyecto
 
 <image src="./images/dkt00.png" alt="imagen de home" width="600" caption="Imagen de Home"/>
 <image src="./images/dkt01.png" alt="imagen de paquetes" width="600" caption="Imagen de Paquetes"/>
