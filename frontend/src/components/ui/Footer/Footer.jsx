@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="w-screen flex flex-col items-start justify-center gap-4 py-5 border-t border-t-gray-400">
         <div className='w-screen flex mobile:flex-col items-start mobile:items-center justify-evenly mb-6'>
             <div className="w-[230px] mobile:w-[250px] mobile:mb-10 flex-col content-around justify-center ">
-                <h3 className="text-xl  text-primary mb-3">Nombre Empresa</h3>
+                <h3 className="text-xl  text-primary mb-3">Trendy Viajes</h3>
                 <p>Descubre experiencias únicas en tus vacaciones de verano, ya sea en la naturaleza exuberante, ciudades vibrantes o playas paradisíacas</p>
             </div>
 
@@ -14,7 +14,7 @@ const Footer = () => {
                 <h3 className="text-xl  text-primary mb-3">Enlaces Rápidos</h3>
                 <a href="/">Home</a>
                 <a href="/">Paquetes</a>
-                <a href="/">Contacto</a>
+                <a href="/contact">Contacto</a>
                 <a href="/">Comunidad</a>
             </div>
 
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-wrap content-around justify-start gap-2">
                     <img src="../Icons/mail.svg" alt="icono de mail" className='w-8 h-8 footerIcon' />
-                    <p>tuviaje@gmail.com</p>
+                    <p>trendyviajes@gmail.com</p>
                 </div>            
             </div>
 

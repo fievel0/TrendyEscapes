@@ -55,7 +55,7 @@ const PackageDetailView = () => {
                                     <button className='w-full border-solid border border-gray-900 rounded-lg bg-primary text-white py-2 mb-4'>Comprar</button>
                                     <div className='border-solid border border-gray-200 rounded-lg p-2'>
                                         <h3 className='font-bold mb-1'>Descripción</h3>
-                                        <p className='mobile:text-sm'>{setselectedPackage.description}</p>
+                                        <p className='mobile:text-sm font-light'>{setselectedPackage.description}</p>
                                     </div>
                                 </div>
                             </div>
@@ -88,7 +88,7 @@ const PackageDetailView = () => {
                         </> :
                         <h1 className='text-3xl text-gray-900 font-bold'>Paquete no encontrado</h1>              
                 }
-            </main>            
+            </main>   
             <Footer/>
         </>
     )

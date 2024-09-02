@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
 import Home from './views/Home';
 import PackageDetailView from './views/PackageDetailView';
+import Contact from './views/Contact';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
        <Routes>
          <Route path="/" element={<Home/>} />
          <Route path='/PackageDetailView/:id' element={<PackageDetailView/>}/>
+         <Route path="/contact" element={<Contact/>} />
        </Routes>
      </BrowserRouter>
     </>
