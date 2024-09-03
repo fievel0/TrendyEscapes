@@ -23,7 +23,7 @@ const PackageCard = ({ packageData }) => {
         <button          
           className="ml-4 bg-primary text-white font-bold py-2 px-4 rounded-xl hover:shadow"
         >
-          <Link to={`/PackageDetailView/${id}`}>Ver +</Link>
+          <Link to={`/packages/${id}`}>Ver +</Link>
         </button>
       </div>
     </div>

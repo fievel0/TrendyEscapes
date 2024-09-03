@@ -5,6 +5,7 @@ import Loader from '../components/ui/Loader/Loader';
 import Footer from '../components/ui/Footer/Footer';
 import PackageDetail from '../components/viajes/PackageDetail';
 import Comments from '../components/viajes/Comments';
+import PayForm from '../components/forms/PayForm';
 
 const findObject = (arr, id) => {
     const objt = arr.find(arr => arr.id === id)
@@ -12,7 +13,7 @@ const findObject = (arr, id) => {
     return objt    
 }
 
-const PackageDetailView = () => {
+const Detail = () => {
     const { id } = useParams();  
     const [loading, setLoading] = useState(true)
     
@@ -49,10 +50,11 @@ const PackageDetailView = () => {
                         </> :
                         <h1 className='text-3xl text-gray-900 font-bold'>Paquete no encontrado</h1>              
                 }
-            </main>   
+            </main>  
+            <PayForm/> 
             <Footer/>
         </>
     )
 }
 
-export default PackageDetailView
+export default Detail
