@@ -6,7 +6,8 @@
       "price": 799,
       "tags": ["Nature", "Travel", "Adventure"],
       "description": "Sumérgete en un paraíso tropical con nuestra escapada a las playas del Caribe. Relájate bajo el sol en arenas blancas, refréscate en aguas cristalinas y disfruta de una amplia variedad de deportes acuáticos. Nuestro resort todo incluido te ofrece una experiencia de lujo con gastronomía internacional, bares, piscinas y entretenimiento nocturno. ¡El destino perfecto para desconectar y recargar energías!",
-      "link to photo": "https://media.gq.com.mx/photos/620e915c43f71a078a35533f/master/pass/playa.jpg",
+      "photo": "https://media.gq.com.mx/photos/620e915c43f71a078a35533f/master/pass/playa.jpg",
+      "hotel": true,
       "reviews": [
             {
                 "name": "Ana López",
@@ -38,7 +39,8 @@
       "price": 599,
       "tags": ["Nature", "Travel", "Adventure"],
       "description": "Adrenalina y naturaleza se unen en nuestra aventura en la montaña. Explora senderos ocultos, desafía tus límites con escalada y rafting, y descubre la belleza de paisajes naturales impresionantes. Nuestro paquete incluye alojamiento en cabañas rústicas, guías expertos y todas las actividades necesarias para una experiencia inolvidable.",
-      "link to photo": "https://www.andes-vertical.com/wp-content/uploads/2019/09/DSC_2111.jpg",
+      "photo": "https://www.andes-vertical.com/wp-content/uploads/2019/09/DSC_2111.jpg",
+      "hotel": true,
       "reviews": [
             {
                 "name": "Ana López",
@@ -70,7 +72,8 @@
       "price": 1499,
       "tags": ["Nature", "Travel", "Adventure"],
       "description": "Embárcate en un viaje inolvidable por las ciudades más emblemáticas de Europa. Descubre la rica historia y cultura de ciudades como Roma, París, Barcelona y Ámsterdam. Visita monumentos históricos, museos de renombre mundial y disfruta de la gastronomía local. Un recorrido diseñado para los amantes de la historia y la cultura.",
-      "link to photo": "https://unapausaagradable.es/wp-content/uploads/2020/08/por-que-roma-es-la-ciudad-eterna.jpg",
+      "hotel": true,
+      "photo": "https://unapausaagradable.es/wp-content/uploads/2020/08/por-que-roma-es-la-ciudad-eterna.jpg",
       "reviews": [
             {
                 "name": "Ana López",
@@ -102,7 +105,8 @@
       "price": 1999,
       "tags": ["Nature", "Travel", "Adventure"],
       "description": "Vive una experiencia única en la vida con nuestro safari en África. Observa de cerca a los animales salvajes en su hábitat natural, como leones, elefantes, jirafas y cebras. Disfruta de la emoción de un safari en jeep y deléitate con la belleza de la sabana africana. Un viaje diseñado para los amantes de la naturaleza y la aventura.",
-      "link to photo": "https://www.zicasso.com/static/71806c3bd0cdfb731fdb39075fa86f8c/304cc/71806c3bd0cdfb731fdb39075fa86f8c.jpg",
+      "photo": "https://www.zicasso.com/static/71806c3bd0cdfb731fdb39075fa86f8c/304cc/71806c3bd0cdfb731fdb39075fa86f8c.jpg",
+      "hotel": true,
       "reviews": [
             {
                 "name": "Ana López",
@@ -134,7 +138,8 @@
       "price": 1299,
       "tags": ["Nature", "Travel", "Adventure"],
       "description": "Navega por las aguas cristalinas del Caribe en un lujoso crucero. Relájate en la piscina, disfruta de espectáculos en vivo, prueba la exquisita gastronomía a bordo y visita islas paradisíacas. Un viaje ideal para desconectar y disfrutar de unas vacaciones inolvidables.",
-      "link to photo": "https://www.hinds.es/wp-content/uploads/2023/04/11-ventajas-de-crucero-con-cargo-adicional-que-valen-cada.jpg",
+      "photo": "https://www.hinds.es/wp-content/uploads/2023/04/11-ventajas-de-crucero-con-cargo-adicional-que-valen-cada.jpg",
+      "hotel": true,
       "reviews": [
             {
                 "name": "Ana López",

@@ -1,24 +1,29 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
-const PackageCard = ({ packageData, onReserve }) => {
-  const { Descripción, Costo, Hotel, Foto } = packageData;
+// eslint-disable-next-line react/prop-types
+const PackageCard = ({ packageData }) => { 
+  // eslint-disable-next-line react/prop-types
+  const { id, title, subtitle, description, price, hotel, photo } = packageData;
 
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-      <img className="w-full h-48 object-cover" src={Foto} alt={Descripción} />
-      <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{Descripción}</div>
-        <p className="text-gray-700 text-base">
-          {Hotel ? 'Includes Hotel' : 'No Hotel Included'}
+    <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-300">
+      <div className="h-[5rem] flex flex-col w-full pt-4 px-4 mb-2">
+        <h2 className="text-xl font-bold">{title}</h2>
+        <h3 className="text-sm text-gray-500">{subtitle}</h3>
+      </div>
+      <img className="w-full h-48 object-cover" src={photo} alt={description} />
+      <div className="px-6 py-4 flex flex-col h-[20rem] justify-between">
+        <div className="mb-2 font-light font-base">{description}</div>
+        <p className="text-gray-700 text-base font-bold">
+          {hotel ? 'Hotel Incluido' : 'Hotel No Incluido'}
         </p>
       </div>
-      <div className="px-6 pt-4 pb-2">
-        <span className="text-gray-900 font-semibold text-lg">${Costo}</span>
-        <button
-          onClick={onReserve}
-          className="ml-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      <div className="px-6 pt-4 pb-2 flex items-center justify-end">
+        <p className="text-gray-900 font-semibold text-lg">${price}</p>
+        <button          
+          className="ml-4 bg-primary text-white font-bold py-2 px-4 rounded-xl hover:shadow"
         >
-          Reserve Now
+          <Link to={`/PackageDetailView/${id}`}>Ver +</Link>
         </button>
       </div>
     </div>

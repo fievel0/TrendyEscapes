@@ -1,6 +1,6 @@
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import packages from '../db/packages.json'
-import { useEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 import Loader from '../components/ui/Loader/Loader';
 import Footer from '../components/ui/Footer/Footer';
 
@@ -15,6 +15,11 @@ const PackageDetailView = () => {
     const [loading, setLoading] = useState(true)
     
     const [setselectedPackage, setSelectedPackage] = useState(null)
+
+    const location = useLocation();
+        useLayoutEffect(() => {
+            document.documentElement.scrollTo(0, 0);
+        }, [location.pathname]);
     
     useEffect(() => {
         //asincronia para simular llamada a api
@@ -34,7 +39,7 @@ const PackageDetailView = () => {
                         <>
                             {/* Package Details */}
                             <div className="w-[1200px] notebook:w-full  flex flex-wrap mobile:flex-col mobile:flex-nowrap mobile:items-center justify-center my-6 mobile:px-6">
-                                <img src={setselectedPackage["link to photo"]} alt="imagen del paquete" className='w-1/2 mobile:w-full py-4 pr-4 pl-8 mobile:pr-0 mobile:pl-0 object-cover'/>
+                                <img src={setselectedPackage["photo"]} alt="imagen del paquete" className='w-1/2 mobile:w-full py-4 pr-4 pl-8 mobile:pr-0 mobile:pl-0 object-cover'/>
                                 <div className='w-1/2 mobile:w-full py-4 pl-4 pr-8 mobile:pr-0 mobile:pl-0'>
                                     <h1 className='text-2xl font-bold mb-2'>{setselectedPackage.title}</h1>
                                     <div className='flex flex-wrap gap-2'>
