@@ -1,6 +1,3 @@
-import React, { useState } from 'react';
-
-
 //Usamos useState para gestionar los datos del formulario. El objeto formData contiene los valores de todos los campos del formulario.
 const BookingForm = ({ packageTypes, onSubmit }) => {
   const [formData, setFormData] = useState({
