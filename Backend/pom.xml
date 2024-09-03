@@ -56,12 +56,35 @@
         </dependency>
     </dependencies>
 
+     <dependency>
+        <groupId>org.flywaydb</groupId>
+        <artifactId>flyway-core</artifactId>
+        <version>9.20.2</version>
+    </dependency>
+    
+   
+    <dependency>
+        <groupId>com.microsoft.sqlserver</groupId>
+        <artifactId>mssql-jdbc</artifactId>
+        <version>22.0.2</version> 
+    </dependency>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
+            </plugin>
+
+
+            <plugin>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-maven-plugin</artifactId>
+            <version>9.20.2</version>
+            <configuration>
+                 "Server=localhost;Database=TrendyEscapes;Trusted_Connection=true;TrustServerCertificate=true"
+            </configuration>
             </plugin>
         </plugins>
     </build>
