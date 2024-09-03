@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
 import Home from './views/Home';
-import PackageDetailView from './views/PackageDetailView';
 import Contact from './views/Contact';
-import PackageList from './views/PackageList';
+import Packages from './views/Packages';
+import Detail from './views/Detail';
 
 function App() {
 
@@ -13,8 +13,8 @@ function App() {
      <BrowserRouter>
        <Routes>
          <Route path="/" element={<Home/>} />
-         <Route path='/PackageDetailView/:id' element={<PackageDetailView/>}/>
-         <Route path="/packagelist" element={<PackageList/>} />
+         <Route path="/packages" element={<Packages/>} />
+         <Route path='/packages/:id' element={<Detail/>}/>
          <Route path="/contact" element={<Contact/>} />
        </Routes>
      </BrowserRouter>
