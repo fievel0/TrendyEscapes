@@ -43,7 +43,8 @@ const Detail = () => {
         setPayForm(false)
     }
 
-    const onPayment = () => {
+    const onPayment = (user) => {
+        console.log("🚀 ~ onPayment ~ user:", user)       
         setPayment(true)
     }
 
