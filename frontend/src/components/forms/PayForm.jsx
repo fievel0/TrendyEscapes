@@ -1,14 +1,32 @@
+import { useState } from "react"
+
 const PayForm = ({onPayment, closePayForm}) => {
+  const [user, setUser] = useState({
+    name: '',
+    email: '',
+    cardNumber: '',
+    code: '',
+    moth: '',
+    year: '',
+
+  })
 
   const handleChange = (e) => {
-    console.log(e.target.value)
-    onPayment()
+    setUser({
+        ...user,
+        [e.target.name]: e.target.value        
+    })   
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onPayment(user); // Pasar el estado user a la función onPayment
   }
 
  
   return (
     <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-        <form className="flex flex-col max-w-[500px] bg-white p-10 rounded-lg shadow-md" onSubmit={onPayment}>
+        <form className="flex flex-col max-w-[500px] bg-white p-10 rounded-lg shadow-md" onSubmit={handleSubmit}>
             <legend className="font-bold text-2xl mb-4">Formulario de Pago</legend>
             <p className="text-[18px] mb-4">Total a pagar: $100</p>
             <div>
@@ -23,13 +41,13 @@ const PayForm = ({onPayment, closePayForm}) => {
 
             <div className="flex w-full mobile:flex-col gap-x-4">
               <div className="w-1/2 mobile:w-full">
-                <label htmlFor="card" className='block mb-2'>Número de Tarjeta</label>
-                <input type="text" id="card" name="card" className='w-full border-solid border rounded-lg px-2 mb-4 py-2' placeholder="Número de Tarjeta" onChange={handleChange}/>
+                <label htmlFor="cardNumber" className='block mb-2'>Número de Tarjeta</label>
+                <input type="text" id="cardNumber" name="cardNumber" className='w-full border-solid border rounded-lg px-2 mb-4 py-2' placeholder="Número de Tarjeta" onChange={handleChange}/>
               </div>
 
               <div className="w-1/2 mobile:w-full ">
-                <label htmlFor="date" className='block mb-2 w-full'>Fecha de Vencimiento</label>
-                <input type="date" id="date" name="date" className='w-full border-solid border rounded-lg px-2 mb-4 py-2' placeholder="Fecha de Vencimiento" onChange={handleChange}/>
+                <label htmlFor="code" className='block mb-2 w-full'>Código de Seguridad</label>
+                <input type="text" id="code" name="code" className='w-full border-solid border rounded-lg px-2 mb-4 py-2' placeholder="Código de Seguridad" onChange={handleChange}/>
               </div>
             </div>
 

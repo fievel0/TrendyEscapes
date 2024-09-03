@@ -15,8 +15,7 @@ const ContactForm = ({openModal}) => {
         })
     }
 
-    const handleSubmit = (e) => {   
-        e.preventDefault()
+    const handleSubmit = (user) => {   
         console.log(user)
         openModal()
     }
