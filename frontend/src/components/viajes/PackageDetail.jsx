@@ -1,4 +1,4 @@
-const PackageDetail = ({pkgd}) => {   
+const PackageDetail = ({pkgd, onPay}) => {   
     return (
         <div className="w-[1200px] notebook:w-full  flex flex-wrap mobile:flex-col mobile:flex-nowrap mobile:items-center justify-center my-6 mobile:px-6">
             <img src={pkgd.photo} alt="imagen del paquete" className='w-1/2 mobile:w-full py-4 pr-4 pl-8 mobile:pr-0 mobile:pl-0 object-cover'/>
@@ -27,7 +27,7 @@ const PackageDetail = ({pkgd}) => {
                         <input type="date" name="date" id="date" className='w-full border-solid border rounded-lg py-1 px-2 mb-4'/>
                     </div>
                 </div>
-                <button className='w-full border-solid border border-gray-900 rounded-lg bg-primary text-white py-2 mb-4 hover:shadow-lg'>Comprar</button>
+                <button className='w-full border-solid border border-gray-900 rounded-lg bg-primary text-white py-2 mb-4 hover:shadow-lg' onClick={onPay}>Comprar</button>
                 <div className='border-solid border border-gray-200 rounded-lg p-2'>
                     <h3 className='font-bold mb-1'>Descripción</h3>
                     <p className='mobile:text-sm font-light'>{pkgd.description}</p>

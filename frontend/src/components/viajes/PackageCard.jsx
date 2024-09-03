@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 
-// eslint-disable-next-line react/prop-types
 const PackageCard = ({ packageData }) => { 
-  // eslint-disable-next-line react/prop-types
   const { id, title, subtitle, description, price, hotel, photo } = packageData;
 
   return (

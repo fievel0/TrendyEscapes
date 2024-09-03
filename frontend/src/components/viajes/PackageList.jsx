@@ -18,7 +18,11 @@ const PackageList = () => {
   return (   
     <main>
         {loading ? 
-            <Loader/> : 
+            <>
+                <Loader/> :
+                {/* reemplzar por skeleton */}
+                <div className='w-full h-[calc(100vh-289px)] text-center'> CARGANDO </div>
+            </>:
             <div className="flex flex-wrap justify-center gap-4 my-4">
                 {pkgs.map((pkg) => (
                     <PackageCard key={pkg.id} packageData={pkg} />
