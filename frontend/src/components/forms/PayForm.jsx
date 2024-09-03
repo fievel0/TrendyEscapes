@@ -1,11 +1,14 @@
-const PayForm = () => {
+const PayForm = ({onPayment, closePayForm}) => {
 
   const handleChange = (e) => {
     console.log(e.target.value)
+    onPayment()
   }
+
+ 
   return (
     <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-        <form className="flex flex-col max-w-[500px] bg-white p-10 rounded-lg shadow-md">
+        <form className="flex flex-col max-w-[500px] bg-white p-10 rounded-lg shadow-md" onSubmit={onPayment}>
             <legend className="font-bold text-2xl mb-4">Formulario de Pago</legend>
             <p className="text-[18px] mb-4">Total a pagar: $100</p>
             <div>
@@ -52,11 +55,9 @@ const PayForm = () => {
             </div>
 
             <div className="flex w-full gap-4">
-              <button className="w-1/2 bg-[#57D788] py-2 rounded-lg text-white hover:shadow-md">PAGAR</button>
-              <button className="w-1/2 bg-[#D7CC57] py-2 rounded-lg text-white hover:shadow-md">CANCELAR</button>
+              <button className="w-1/2 bg-[#57D788] py-2 rounded-lg text-white hover:shadow-md" type="submit">PAGAR</button>
+              <button className="w-1/2 bg-[#D7CC57] py-2 rounded-lg text-white hover:shadow-md" onClick={closePayForm}>CANCELAR</button>
             </div>
-
-
         </form>
 
     </div>
