@@ -12,8 +12,8 @@ const PackageCard = ({ packageData }) => {
         <h3 className="text-sm text-gray-500">{subtitle}</h3>
       </div>
       <img className="w-full h-48 object-cover" src={photo} alt={description} />
-      <div className="px-6 py-4 flex flex-col h-[20rem] justify-between">
-        <div className="mb-2 font-light font-base">{description}</div>
+      <div className="px-6 py-4 flex flex-col h-[15rem] justify-between">
+        <div className="mb-2 font-light text-sm">{description}</div>
         <p className="text-gray-700 text-base font-bold">
           {hotel ? 'Hotel Incluido' : 'Hotel No Incluido'}
         </p>
