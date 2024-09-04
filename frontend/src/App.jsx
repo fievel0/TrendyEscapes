@@ -4,6 +4,7 @@ import Home from './views/Home';
 import Contact from './views/Contact';
 import Packages from './views/Packages';
 import Detail from './views/Detail';
+import Footer from './components/ui/Footer/Footer';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
          <Route path='/packages/:id' element={<Detail/>}/>
          <Route path="/contact" element={<Contact/>} />
        </Routes>
+       <Footer/>
      </BrowserRouter>
     </>
   )
