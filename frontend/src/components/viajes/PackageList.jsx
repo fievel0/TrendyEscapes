@@ -17,22 +17,17 @@ const PackageList = () => {
     })
 
   return (   
-    <main>
+    <main className="flex flex-wrap justify-center gap-4 py-4 mb-4 bg-[#F0E2D5]">
         {loading ? 
             <>
-                <Loader/> :
-                {/* colocar 5 cards skeletons */}
-                <div className="flex flex-wrap justify-center gap-4 my-4">
-                    {Array.from({length: 5}, (_, i) => <CardSkeleton key={i} />)}                
-                </div> 
-                
+                <Loader />
+                {Array.from({length: 5}, (_, i) => <CardSkeleton key={i} />)}
             </>:
-            <div className="flex flex-wrap justify-center gap-4 my-4">
-                {pkgs.map((pkg) => (
-                    <PackageCard key={pkg.id} packageData={pkg} />
-                ))}
-            </div>            
-        }
+
+            pkgs.map((pkg) => (
+                <PackageCard key={pkg.id} packageData={pkg} />
+            ))
+        }          
     </main>
   )
 }
