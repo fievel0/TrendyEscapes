@@ -32,7 +32,7 @@ const Footer = () => {
                 <a href="/">Comunidad</a>
             </div>
 
-            <div className="w-[230px] mobile:w-[250px] mobile:mb-10 flex flex-col items-start content-around justify-center border-solid">
+            <div className="w-[250px] mobile:mb-10 flex flex-col items-start content-around justify-center border-solid">
                 <h3 className="text-xl  text-primary mb-3">Contacto</h3>
                 <div className="flex flex-wrap content-around justify-start gap-2">
                     <img src="../Icons/location.svg" alt="icono de ubicación" className='w-8 h-8 footerIcon' />
