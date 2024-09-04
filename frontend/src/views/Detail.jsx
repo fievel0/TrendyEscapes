@@ -2,11 +2,11 @@ import { useLocation, useParams } from 'react-router-dom';
 import packages from '../db/packages.json'
 import { useEffect, useLayoutEffect, useState } from 'react';
 import Loader from '../components/ui/Loader/Loader';
-import Footer from '../components/ui/Footer/Footer';
 import PackageDetail from '../components/viajes/PackageDetail';
 import Comments from '../components/viajes/Comments';
 import PayForm from '../components/forms/PayForm';
 import PaymentModal from '../components/ui/PaymentModal/PaymentModal';
+import BackToBtn from '../components/ui/Button/BackToBtn';
 
 const findObject = (arr, id) => {
     const objt = arr.find(arr => arr.id === id)
@@ -23,9 +23,9 @@ const Detail = () => {
     const [setselectedPackage, setSelectedPackage] = useState(null)
 
     const location = useLocation();
-        useLayoutEffect(() => {
-            document.documentElement.scrollTo(0, 0);
-        }, [location.pathname]);
+    useLayoutEffect(() => {
+        document.documentElement.scrollTo(0, 0);
+    }, [location.pathname]);
     
     useEffect(() => {
         //asincronia para simular llamada a api
@@ -69,9 +69,9 @@ const Detail = () => {
                         <h1 className='text-3xl text-gray-900 font-bold'>Paquete no encontrado</h1>              
                 }
             </main>  
+            <BackToBtn link="/packages" text='Volver a paquetes'/>
             {payForm && <PayForm closePayForm={closePayForm} onPayment={onPayment}/>}
             {payment && <PaymentModal/>}
-            <Footer/>
         </>
     )
 }
