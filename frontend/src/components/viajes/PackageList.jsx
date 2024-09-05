@@ -17,7 +17,7 @@ const PackageList = () => {
     })
 
   return (   
-    <main className="flex flex-wrap justify-center gap-4 py-4 mb-4 bg-[#F0E2D5]">
+    <main className="flex flex-wrap justify-center gap-4 py-4 mb-4 bg-secundary">
         {loading ? 
             <>
                 <Loader />

@@ -3,7 +3,7 @@ import { MdOutlineTravelExplore } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <header class="bg-secundary">
+    <header class="bg-white">
       <nav
         class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -49,7 +49,7 @@ const Navbar = () => {
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <div class="flex space-x-2">
-            <button class="bg-white rounded-xl p-2 text-gray-900 hover:bg-primary hover:text-gray-700 transition duration-300 ease-in-out">
+            <button class="bg-secundary rounded-xl p-2 text-gray-900 hover:bg-primary hover:text-gray-700 transition duration-300 ease-in-out">
               Log in
             </button>
             <button class="bg-primary rounded-xl p-2 text-gray-900 hover:bg-white hover:text-gray-700 transition duration-300 ease-in-out">
