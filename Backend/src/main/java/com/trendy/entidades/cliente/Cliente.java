@@ -1,8 +1,10 @@
 package com.trendy.entidades.cliente;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 
 @Entity
+@Getter
 @Table(name = "Cliente")
 public class Cliente {
 
