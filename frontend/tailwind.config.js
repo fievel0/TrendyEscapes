@@ -11,6 +11,7 @@ export default {
     extend: {      
       colors: {
         'primary': '#FF9500',
+        'secundary': '#f8e4d4'
       },
       screens: {
         notebook: {max: '1280px'},
