@@ -8,7 +8,7 @@ CREATE TABLE Cliente (
     fecha_nacimiento date,
     direccion VARCHAR(255),
     telefono VARCHAR(50),
-    PRIMARY KEY(id_c)
+    PRIMARY KEY(id_cliente)
 );
 
 
