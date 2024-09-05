@@ -1,6 +1,6 @@
 const Comments = ({pkgd}) => {
   return (
-    <div className='w-full bg-[#f0e2d5] py-5 px-10 flex flex-col items-center justify-between'>
+    <div className='w-full bg-[#f0e2d5] py-5 px-10 flex flex-col items-center justify-between mb-4'>
         <h3 className='w-full text-2xl text-center font-bold mb-6 text-gray-900'>Comentarios</h3>
         <div className='w-full flex tablet:flex-col items-center justify-center gap-5'>
             {pkgd.reviews.map((review, index) => (

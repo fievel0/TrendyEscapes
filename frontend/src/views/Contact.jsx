@@ -1,6 +1,5 @@
 import { useState } from "react"
 import ContactForm from "../components/forms/ContactForm"
-import Footer from "../components/ui/Footer/Footer"
 import ContactModal from "../components/ui/ContactModal/ContactModal"
 
 
@@ -14,7 +13,6 @@ const Contact = () => {
   return (
     <>
         <ContactForm openModal={openModal}/>
-        <Footer/>
         {modal && <ContactModal/>}        
     </>
   )

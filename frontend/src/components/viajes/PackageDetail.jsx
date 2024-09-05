@@ -27,7 +27,7 @@ const PackageDetail = ({pkgd, onPay}) => {
                         <input type="date" name="date" id="date" className='w-full border-solid border rounded-lg py-1 px-2 mb-4'/>
                     </div>
                 </div>
-                <button className='w-full border-solid border border-gray-900 rounded-lg bg-primary text-white py-2 mb-4 hover:shadow-lg' onClick={onPay}>Comprar</button>
+                <button className='w-full border-solid rounded-lg bg-primary text-white py-2 mb-4 hover:shadow-lg' onClick={onPay}>Comprar</button>
                 <div className='border-solid border border-gray-200 rounded-lg p-2'>
                     <h3 className='font-bold mb-1'>Descripción</h3>
                     <p className='mobile:text-sm font-light'>{pkgd.description}</p>
