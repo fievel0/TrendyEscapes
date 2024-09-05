@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="w-[150px] mobile:w-[250px] mobile:mb-10 flex flex-col items-start content-center justify-center ">
                 <h3 className="text-xl  text-primary mb-3">Enlaces Rápidos</h3>
                 <a href="/">Home</a>
-                <a href="/">Paquetes</a>
+                <a href="/packages">Paquetes</a>
                 <a href="/contact">Contacto</a>
                 <a href="/">Comunidad</a>
             </div>
