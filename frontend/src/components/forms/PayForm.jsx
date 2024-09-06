@@ -25,7 +25,7 @@ const PayForm = ({onPayment, closePayForm}) => {
 
  
   return (
-    <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 backdrop-blur-sm z-50 flex items-center mobile:items-start justify-center p-4 overflow-x-scroll">
         <form className="flex flex-col max-w-[500px] bg-white p-10 rounded-lg shadow-md" onSubmit={handleSubmit}>
             <legend className="font-bold text-2xl mb-4">Formulario de Pago</legend>
             <p className="text-[18px] mb-4">Total a pagar: $100</p>

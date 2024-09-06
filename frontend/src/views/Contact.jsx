@@ -4,7 +4,7 @@ import ContactModal from "../components/ui/ContactModal/ContactModal"
 
 
 const Contact = () => {
-    const [modal, setModal] = useState(true)
+    const [modal, setModal] = useState(false)
 
     const openModal = () => {
         setModal(true)

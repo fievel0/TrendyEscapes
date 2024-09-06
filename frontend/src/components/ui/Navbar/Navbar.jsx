@@ -1,13 +1,15 @@
 import { useState , useEffect } from "react";
 import { MdOutlineTravelExplore } from "react-icons/md";
-import LoginForm from "../forms/LoginForm";
-import RegisterForm from "../forms/RegisterForm";
+import LoginForm from "../../forms/LoginForm";
+import RegisterForm from "../../forms/RegisterForm";
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
+import MobileMenu from "./MobileMenu";
 
 
 const Navbar = () => {
     const [isHome, setIsHome] = useState(null)
+    const [showMenu, setShowMenu] = useState(true)
 
     /* esconder el footer en home */
     const location = useLocation();
@@ -42,6 +44,10 @@ const Navbar = () => {
         console.log(user)
     }
 
+    const closeMenu = () => {
+        setShowMenu(false)
+    }
+
 
 
     return (
@@ -57,11 +63,8 @@ const Navbar = () => {
                             <MdOutlineTravelExplore className="h-8 w-auto" />
                         </Link>
                     </div>
-                    <div className="flex lg:hidden">
-                        <button
-                            type="button"
-                            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-                        >
+                    <div className='flex lg:hidden' onClick={() => setShowMenu(!showMenu)}>
+                        <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                             <span className="sr-only">Open main menu</span>
                             <svg
                                 className="h-6 w-6"
@@ -79,7 +82,7 @@ const Navbar = () => {
                             </svg>
                         </button>
                     </div>
-                    <div className="hidden lg:flex lg:gap-x-12">
+                    <div className='lg:flex lg:gap-x-12 hidden'>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
                             Comunidad
                         </a>
@@ -100,6 +103,7 @@ const Navbar = () => {
                             </button>
                         </div>
                     </div>
+                    {showMenu && <MobileMenu closeMenu={closeMenu} login={handleLoginForm} register={handleRegisterForm}/>}
                 </nav>
             </header>
 
