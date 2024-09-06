@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import BackToBtn from "../components/ui/Button/BackToBtn";
 import PackageList from "../components/viajes/PackageList";
 import { useLayoutEffect } from "react";
-import Navbar from "../components/ui/Navbar";
 
 const Packages = () => {
 
@@ -14,7 +13,6 @@ const Packages = () => {
 	
 	return (
 		<>
-    <Navbar />
 			<PackageList />
 			<BackToBtn link="/" text="Volver a Home" />
 		</>

@@ -5,6 +5,7 @@ import Contact from './views/Contact';
 import Packages from './views/Packages';
 import Detail from './views/Detail';
 import Footer from './components/ui/Footer/Footer';
+import Navbar from './components/ui/Navbar';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
      <BrowserRouter>
+     <Navbar />
        <Routes>
          <Route path="/" element={<Home/>} />
          <Route path="/packages" element={<Packages/>} />

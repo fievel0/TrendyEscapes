@@ -33,7 +33,7 @@ const SearchBox = () => {
             <img src="./Images/search.svg" alt="search icon"/>
             <input type="text" className="bg-white focus:bg-white focus:outline-none" />
             <button className="h-14 w-14 bg-primary rounded-2xl text-3xl flex flex-wrap justify-center items-center pb-[6px]">+</button>
-            <div className="absolute right-1/2 translate-x-[400px] mt-4 cursor-pointer" onClick={handleLoginForm}>
+            <div className="absolute top-10 right-10 cursor-pointer" onClick={handleLoginForm}>
                 <svg  xmlns="http://www.w3.org/2000/svg"  width="48"  height="48"  viewBox="0 0 24 24"  fill="none"  stroke="#FF9500"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
             </div>
         </div>
