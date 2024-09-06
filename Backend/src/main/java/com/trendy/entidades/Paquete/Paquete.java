@@ -41,4 +41,8 @@ public class Paquete {
     @OneToOne
     @JoinColumn(name="id_tipo_paquete", nullable = false)
     private Tipo_paquete tipo_paquete;
+
+    @OneToOne
+    @JoinColumn(name = "id_pais", nullable = false)
+    private Pais pais;
 }   
