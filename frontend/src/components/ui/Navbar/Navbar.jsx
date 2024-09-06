@@ -9,7 +9,7 @@ import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
     const [isHome, setIsHome] = useState(null)
-    const [showMenu, setShowMenu] = useState(true)
+    const [showMenu, setShowMenu] = useState(false)
 
     /* esconder el footer en home */
     const location = useLocation();
@@ -82,16 +82,16 @@ const Navbar = () => {
                             </svg>
                         </button>
                     </div>
-                    <div className='lg:flex lg:gap-x-12 hidden'>
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                    <div className='lg:flex lg:gap-x-12 hidden [&>*]:rounded-md [&>*]:py-2 [&>*]:px-4 [&>*]:border [&>*]:border-white hover:[&>*]:border-primary '>
+                        <Link  to="/" className="text-sm font-semibold leading-6 text-gray-900">
                             Comunidad
-                        </a>
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                        </Link>
+                        <Link to="/packages" className="text-sm font-semibold leading-6 text-gray-900">
                             Paquetes
-                        </a>
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                        </Link>
+                        <Link to="/contact" className="text-sm font-semibold leading-6 text-gray-900">
                             Contacto
-                        </a>
+                        </Link>
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                         <div className="flex space-x-2">
