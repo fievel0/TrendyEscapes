@@ -9,6 +9,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -30,15 +31,12 @@ public class Paquete {
     private int costo_paquete;
     private String hotel;
     private Byte foto;
-    @OneToOne
-    @JoinColumn(name="id_pais", nullable=false)
-    private List<Pais> paisList = new ArrayList<>();
 
     @ManyToMany
     @JoinColumn(name="id_paquete_ciudad", nullable=false)
     private List<Paquete_Ciudad> paqueteciudadList = new ArrayList<>();
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="id_tipo_paquete", nullable = false)
     private Tipo_paquete tipo_paquete;
 
