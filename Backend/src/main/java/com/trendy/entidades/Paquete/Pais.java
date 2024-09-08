@@ -6,7 +6,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -26,7 +25,7 @@ public class Pais {
     private Long id_pais;
     private String nombre_pais;
 
-    @OneToOne(mappedBy = "id_paquete")
+    @OneToMany(mappedBy = "id_paquete")
     private Paquete paquete;
 
     @OneToMany
