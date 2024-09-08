@@ -14,16 +14,16 @@ public class Autenticacion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long autenticacion_id;
+    @Column(name = "id_auth")
+    private Long idAutenticacion;
 
     @Column(nullable = false, unique = true)
     private String email;
 
-    @Column(nullable = false, unique = true)
+    @Column(name = "contrasena",  nullable = false, unique = true)
     private String password;
 
     @OneToOne(mappedBy = "autenticacion")
-    private Cliente cliente_id;
-
+    private Cliente idCliente;
 
 }
