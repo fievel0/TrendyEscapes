@@ -6,8 +6,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import lombok.Getter;
 
 @Entity
+@Getter
 @Table(name = "Cliente")
 @AllArgsConstructor
 @NoArgsConstructor
