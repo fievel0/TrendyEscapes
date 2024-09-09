@@ -20,10 +20,8 @@ public class Autenticacion {
     @Column(nullable = false, unique = true)
     private String email;
 
-    @Column(name = "contrasena",  nullable = false, unique = true)
+    @Column(name = "contrasena",  nullable = false)
     private String password;
 
-    @OneToOne(mappedBy = "autenticacion")
-    private Cliente idCliente;
 
 }

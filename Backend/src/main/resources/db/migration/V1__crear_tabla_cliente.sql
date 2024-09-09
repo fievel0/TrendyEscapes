@@ -1,14 +1,13 @@
-CREATE TABLE Cliente (
-    id_cliente bigserial,
-    id_pais bigint,
-    id_formapago bigint,
-    id_autenticacion bigint,
-    nombre VARCHAR(100),
-    num_documento VARCHAR(50),
-    fecha_nacimiento date,
+CREATE TABLE cliente (
+    id_cliente BIGSERIAL PRIMARY KEY,
+    id_pais BIGINT,
+    id_formapago BIGINT,
+    id_autenticacion BIGINT NOT NULL,
+    nombre VARCHAR(100) NOT NULL,
+    num_documento VARCHAR(50) NOT NULL UNIQUE,
+    fecha_nacimiento DATE NOT NULL,
     direccion VARCHAR(255),
-    telefono VARCHAR(50),
-    PRIMARY KEY(id_cliente)
+    telefono VARCHAR(50)
 );
 
 

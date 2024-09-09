@@ -3,37 +3,28 @@ package com.trendy.entidades.Paquete;
 import java.util.ArrayList;
 import java.util.List;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
-@Setter
-@Getter
 @Entity
+@Table(name = "ciudad")
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "Ciudad")
+@Data
 public class Ciudad {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_ciudad;
-    private String nombre_ciudad;
+    @Column(name = "id_ciudad")
+    private Long idCiudad;  // Este campo no debería tener insertable=false ni updatable=false
 
-    @ManyToMany(mappedBy = "Paquete", fetch = FetchType.EAGER)
+    @Column(name = "nombre_ciudad", unique = true, nullable = false)
+    private String nombreCiudad;
+
+    @ManyToMany(mappedBy = "ciudadList", fetch = FetchType.EAGER)  // Debe referirse al campo en Paquete
     private List<Paquete> paqueteList = new ArrayList<>();
 
-
-
     @ManyToOne
-    private Pais pais;
-
+    @JoinColumn(name = "id_pais", nullable = false)
+    private Pais idPais;
 }

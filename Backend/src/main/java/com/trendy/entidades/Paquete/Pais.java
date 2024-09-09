@@ -1,34 +1,31 @@
 package com.trendy.entidades.Paquete;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
-@Setter
-@Getter
+import java.util.ArrayList;
+import java.util.List;
+
+
+@Entity
+@Table(name = "pais")
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name = "Pais")
+@Data
 
 public class Pais {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY )
-    private Long id_pais;
-    private String nombre_pais;
 
-    @OneToMany(mappedBy = "id_paquete")
-    private Paquete paquete;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id_pais;
+
+    @Column(name = "nombre_pais", nullable = false, unique = true)
+    private String nombrePais;
+
+    @OneToMany(mappedBy = "pais")  // Referencia correcta al campo en Paquete
+    private List<Paquete> paquete = new ArrayList<>();
 
     @OneToMany
-    @JoinColumn(name="id_ciudad", nullable = false)
-    private Ciudad ciudad;
+    @JoinColumn(name = "id_pais")  // Cambié id_ciudad por id_pais para que coincida
+    private List<Ciudad> ciudad = new ArrayList<>();
 }
