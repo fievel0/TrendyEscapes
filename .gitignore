@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# IntelliJ IDEA files
+Backend/backend.iml
+
+# Maven target directory
+Backend/target/
