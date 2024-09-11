@@ -14,18 +14,16 @@ Con Trendy Escapes, explorar el mundo y documentar cada paso del viaje nunca fue
 <image src="./images/dkt01.png" alt="imagen de paquetes" width="600" caption="Imagen de Paquetes"/>
 
 ### Miembros del equipo
-#### Frontend
--   [Mercedes Soto Bejarano](https://github.com/MerSb) - [LinkedIn](https://ar.linkedin.com/in/emilce-mercedes-soto-bejarano)
--   [Eneas Baroni](https://github.com/eneasbaroni) - [LinkedIn](https://www.linkedin.com/in/eneasbaroni)
--   [Álvaro Johansen](https://github.com/Alvarojohansen) - [LinkedIn](https://www.linkedin.com/in/%C3%A1lvaro-johansen-bb147a246)
-#### Backend
--   [Nicolle Rosa](https://github.com/Nicoleta0c) - [LinkedIn](https://www.linkedin.com/in/nicolle-rosa/)
--   [Fabian Paucar](https://github.com/fievel0)
--   [Julian David Peña](https://github.com/julian-pena) - [LinkedIn](https://www.linkedin.com/in/julian-pena-java)
--   Fabian Paucar
--   Carlos FLores
-#### QA
--   [Jorge Peyrano](https://github.com/Japeyr) - [LinkedIn](http://www.linkedin.com/in/jorge-peyrano)
+| Nombre y Apellido   | Rol             | ![LinkedIn](https://github.com/No-Country-simulation/c20-44-n-java-react/blob/main/icons8-logotipo-de-linkedin-48.png)                               | ![GitHub](https://github.com/No-Country-simulation/c20-44-n-java-react/blob/main/icons8-github-48.png)                                |
+|---------------------|-----------------|----------------------------------------|---------------------------------------|
+| Mercedes Soto Bejarano          | Frontend   | [LinkedIn](https://ar.linkedin.com/in/emilce-mercedes-soto-bejarano) | [Visita mi repositorio](https://github.com/MerSb) |
+| Eneas Baroni         | Frontend          | [LinkedIn](https://www.linkedin.com/in/eneasbaroni) |[Visita mi repositorio](https://github.com/eneasbaroni) |
+| Álvaro Johansen      | Frontend      | [LinkedIn](https://www.linkedin.com/in/%C3%A1lvaro-johansen-bb147a246) | [Visita mi repositorio](https://github.com/Alvarojohansen) |
+| Nicolle Rosa          | Backend   | [LinkedIn](https://www.linkedin.com/in/nicolle-rosa/) | [Visita mi repositorio](https://github.com/Nicoleta0c) |
+| Fabian Paucar         | Backend          | [LinkedIn](https://www.linkedin.com/in/fabian-paucar/) | [Visita mi repositorio](https://github.com/fievel0) |
+| Julian David Peña      | Backend      | [LinkedIn](https://www.linkedin.com/in/julian-pena-java) | [Visita mi repositorio](https://github.com/julian-pena) |
+| Jorge Peyrano      | QA Tester      | [LinkedIn](https://www.linkedin.com/in/jorge-peyrano) | [Visita mi repositorio](https://github.com/Japeyr) |
+
 
 ### Tecnologías utilizadas
 #### Frontend
@@ -35,3 +33,11 @@ Con Trendy Escapes, explorar el mundo y documentar cada paso del viaje nunca fue
 #### Backend
 -   [Java](https://www.oracle.com/es/java/technologies/downloads/)
 -   [Spring Boot](https://spring.io/projects/spring-boot)
+
+### Enlaces
+-   [Análisis de Requerimientos](https://drive.google.com/file/d/1KlVY-xwng3755pDjj2HWh1ZLB_BAtzz7/view?usp=sharing)
+-   [Documentación](https://drive.google.com/file/d/1Qyi7NWYYZKsyIMigMCLysoKuoxB0isZk/view?usp=sharing)
+-   [Historias de Usuarios](https://drive.google.com/file/d/1L8ZuV0-lkvgpnYcICKnOFO7QsqIme1du/view?usp=sharing)
+-   [Plan de Pruebas General](https://drive.google.com/file/d/1H1gQidOxZ6Oot1t7y06bR38F-ALkFY2N/view?usp=sharing)
+-   [Plan de Pruebas para Registro y Autenticación](https://drive.google.com/file/d/1nRkL0tiZFan1Y0i6S_cnhSQqCPQcUuRq/view?usp=sharing)
+-   [Plan de Pruebas para Gestión de Selección y Registros de Viajes](https://drive.google.com/file/d/1abkliIYEEXdobbJmgX40xeDvj1l27oKC/view?usp=sharing)
