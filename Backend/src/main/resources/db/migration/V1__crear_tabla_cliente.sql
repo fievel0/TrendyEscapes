@@ -7,7 +7,7 @@ CREATE TABLE cliente (
     num_documento VARCHAR(50) NOT NULL UNIQUE,
     fecha_nacimiento DATE NOT NULL,
     direccion VARCHAR(255),
-    telefono VARCHAR(50)
+    num_telefono VARCHAR(50)
 );
 
 
