@@ -1,0 +1,29 @@
+
+@keyframes shimmer_2s_infinite {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.skeleton {
+    position: relative;
+    overflow: hidden;
+    background-color: #eeeded;
+}
+  
+.skeleton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta este valor según sea necesario */
+    height: 100%;
+    background: linear-gradient(90deg, #eeeded 0%, #c1c0c0 50%, #eeeded 100%);
+    animation: shimmer_2s_infinite 4s linear infinite;
+}
+  
+ 
+

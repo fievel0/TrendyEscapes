@@ -1,7 +1,5 @@
 import { useState } from "react"
 
-
-// eslint-disable-next-line react/prop-types
 const ContactForm = ({openModal}) => {
 
     const [user, setuser] = useState({
@@ -17,8 +15,7 @@ const ContactForm = ({openModal}) => {
         })
     }
 
-    const handleSubmit = (e) => {   
-        e.preventDefault()
+    const handleSubmit = (user) => {   
         console.log(user)
         openModal()
     }
