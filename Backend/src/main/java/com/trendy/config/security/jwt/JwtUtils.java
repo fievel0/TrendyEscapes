@@ -42,18 +42,17 @@ public class JwtUtils {
 
     }
 
-    public DecodedJWT validateToken(String jwtToken){
+    public DecodedJWT validateToken(String jwtToken) {
         try {
             Algorithm algorithm = Algorithm.HMAC256(privateKey);
-
             JWTVerifier verifier = JWT.require(algorithm)
                     .withIssuer(userGenerator)
                     .build();
 
             return verifier.verify(jwtToken);
 
-        } catch (JWTVerificationException jwtVerificationException){
-            throw new JWTVerificationException("Token es invalido. No autorizado");
+        } catch (JWTVerificationException jwtVerificationException) {
+            throw new JWTVerificationException("Token es inválido o no autorizado. Por favor ingresar nuevamente");
         }
     }
 
