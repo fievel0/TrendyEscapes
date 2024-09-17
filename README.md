@@ -41,3 +41,11 @@ Con Trendy Escapes, explorar el mundo y documentar cada paso del viaje nunca fue
 -   [Plan de Pruebas General](https://drive.google.com/file/d/1H1gQidOxZ6Oot1t7y06bR38F-ALkFY2N/view?usp=sharing)
 -   [Plan de Pruebas para Registro y Autenticación](https://drive.google.com/file/d/1nRkL0tiZFan1Y0i6S_cnhSQqCPQcUuRq/view?usp=sharing)
 -   [Plan de Pruebas para Gestión de Selección y Registros de Viajes](https://drive.google.com/file/d/1abkliIYEEXdobbJmgX40xeDvj1l27oKC/view?usp=sharing)
+
+### Video Promocional
+
+
+https://github.com/user-attachments/assets/8906e4d1-e3a8-4c99-945e-6b557716f0f7
+
+
+
