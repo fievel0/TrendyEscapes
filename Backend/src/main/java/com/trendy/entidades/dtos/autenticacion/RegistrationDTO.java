@@ -22,7 +22,7 @@ public record RegistrationDTO(
                 description = "Número de teléfono del cliente. Debe tener exactamente 10 caracteres numéricos.",
                 example = "1234567890"
         )
-        @Size(min = 10, max = 10, message = "El teléfono debe tener exactamente 10 caracteres.")
+        @Size(min = 5, max = 10, message = "El teléfono debe tener entre 5 y  10 caracteres.")
         @Pattern(regexp = "\\d+", message = "El teléfono solo puede contener números.")
         String telefono,
 
@@ -30,7 +30,7 @@ public record RegistrationDTO(
                 description = "Número de documento del cliente. Debe tener exactamente 10 caracteres numéricos.",
                 example = "9876543210"
         )
-        @Size(min = 10, max = 10, message = "El número de documento debe tener exactamente 10 caracteres.")
+        @Size(min = 5, max = 10, message = "El número de documento debe tener exactamente entre 5 y 10 caracteres.")
         @Pattern(regexp = "\\d+", message = "El número de documento solo puede contener números.")
         @UniqueDocumento
         String documento,

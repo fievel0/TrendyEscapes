@@ -3,7 +3,7 @@ CREATE TABLE paquete (
     id_pais BIGINT NOT NULL,
     id_tipo_paquete BIGINT NOT NULL,
     nombre_paquete VARCHAR(100) NOT NULL UNIQUE,
-    costo INTEGER,
+    costo_paquete INTEGER,
     hotel VARCHAR(255),
     foto BYTEA
 );
