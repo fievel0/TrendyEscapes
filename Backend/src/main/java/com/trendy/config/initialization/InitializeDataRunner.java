@@ -24,13 +24,10 @@ public class InitializeDataRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
-        // SI no se ha inicializado la tabla Paises, entonces correr todos los inicializadores
-        if (paisRepository.count() == 0) {
-            for (DataInitializer dataInitializer : dataInitializers) {
+         for (DataInitializer dataInitializer : dataInitializers) {
                 dataInitializer.initialize();
             }
-        }
+        System.out.println("Paquetes inicializados");
     }
 
 

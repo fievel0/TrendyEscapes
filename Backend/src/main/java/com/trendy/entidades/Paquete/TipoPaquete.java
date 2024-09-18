@@ -1,5 +1,6 @@
 package com.trendy.entidades.Paquete;
 
+import com.trendy.entidades.enums.TipoPaqueteEnum;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -19,8 +20,14 @@ public class TipoPaquete {
     private Long idTipoPaquete;
 
     @Column(nullable = false)
-    private String descripcion;
+    @Enumerated(EnumType.STRING)
+    private TipoPaqueteEnum descripcion;
 
-    @OneToMany(mappedBy = "tipoPaquete")
+    @OneToMany(mappedBy = "tipoPaquete", fetch = FetchType.EAGER)
     private List<Paquete> paquetes = new ArrayList<>();
+
+    public TipoPaquete(String tipoPaquete){
+        this.descripcion = TipoPaqueteEnum.valueOf(tipoPaquete);
+    }
+
 }

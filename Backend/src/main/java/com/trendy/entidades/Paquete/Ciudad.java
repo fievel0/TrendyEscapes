@@ -27,4 +27,9 @@ public class Ciudad {
     @ManyToOne
     @JoinColumn(name = "id_pais", nullable = false)
     private Pais idPais;
+
+    public Ciudad(String ciudadString){
+        this.nombreCiudad = ciudadString;
+    }
+
 }

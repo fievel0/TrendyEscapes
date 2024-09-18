@@ -21,7 +21,6 @@ public class Pais {
     @JsonProperty("id")
     private Long id_pais;
 
-
     @Column(name = "nombre_pais", nullable = false, unique = true)
     @JsonProperty("countryName")
     private String nombrePais;
@@ -32,4 +31,9 @@ public class Pais {
     @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_pais")  // Cambié id_ciudad por id_pais para que coincida
     private List<Ciudad> ciudad = new ArrayList<>();
+
+    public Pais(String paisString){
+        nombrePais = paisString;
+    }
+
 }
