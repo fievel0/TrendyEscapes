@@ -31,6 +31,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> {
                     auth.requestMatchers(HttpMethod.POST, "/auth/**").permitAll();
                     auth.requestMatchers(HttpMethod.GET, "/images/**").permitAll();
+                    auth.requestMatchers(HttpMethod.GET, "/paquetes/**").permitAll();
                     auth.requestMatchers("/swagger-ui/**",
                             "/swagger-ui.html/**",
                             "/swagger-resources/*",
