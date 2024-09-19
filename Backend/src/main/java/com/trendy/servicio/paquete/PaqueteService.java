@@ -6,6 +6,7 @@ import com.trendy.mapper.PaqueteMapper;
 import com.trendy.repositorio.PaqueteRepository;
 import com.trendy.servicio.paquete.filter.PaqueteSearchFilter;
 import com.trendy.servicio.paquete.filter.PaqueteSearchFilterFactory;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
@@ -40,5 +41,12 @@ public class PaqueteService {
         }
         List<PaqueteDTO> paqueteDTOList = paqueteMapper.paquetesToPaquetesDTO(paquetePage.getContent());
         return new PageImpl<>(paqueteDTOList, pageable, paquetePage.getTotalElements());
+    }
+
+    public PaqueteDTO getSinglePaquete(Long id) {
+        Paquete paquete = paqueteRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Paquete no encontrado con ID " + id));
+
+        return paqueteMapper.paqueteToPaqueteDTO(paquete);
     }
 }
