@@ -7,6 +7,7 @@ import Detail from './views/Detail';
 import Footer from './components/ui/Footer/Footer';
 import Navbar from './components/ui/Navbar/Navbar';
 import { UserProvider } from './context/userContext';
+import Search from './views/Search';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 						<Route path="/" element={<Home />} />
 						<Route path="/packages" element={<Packages />} />
 						<Route path='/packages/:id' element={<Detail />} />
+						<Route path='/search/:pais' element={<Search />} />
 						<Route path="/contact" element={<Contact />} />
 					</Routes>
 					<Footer />

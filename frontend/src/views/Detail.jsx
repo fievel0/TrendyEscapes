@@ -1,5 +1,4 @@
 import { useLocation, useParams } from 'react-router-dom';
-import packages from '../db/packages.json'
 import { useEffect, useLayoutEffect, useState } from 'react';
 import Loader from '../components/ui/Loader/Loader';
 import PackageDetail from '../components/viajes/PackageDetail';
@@ -7,12 +6,10 @@ import Comments from '../components/viajes/Comments';
 import PayForm from '../components/forms/PayForm';
 import PaymentModal from '../components/ui/PaymentModal/PaymentModal';
 import BackToBtn from '../components/ui/Button/BackToBtn';
+import { BASEURL } from '../config/config';
+import axios from 'axios';
+import packages from '../db/packages.json'
 
-const findObject = (arr, id) => {
-    const objt = arr.find(arr => arr.id === id)
-    if (!objt) return null
-    return objt    
-}
 
 const Detail = () => {
     const { id } = useParams();  
@@ -28,12 +25,13 @@ const Detail = () => {
     }, [location.pathname]);
     
     useEffect(() => {
-        //asincronia para simular llamada a api
-        setTimeout(() => {
-            setSelectedPackage(findObject(packages, id))
-            setLoading(false)            
-      }, 1000)
-    })
+        axios.get(`${BASEURL}/paquetes/${id}`)
+        .then((res) => {
+            console.log("🚀 ~ .then ~ res:", res)
+            setSelectedPackage(res.data)
+            setLoading(false)
+        })     
+    }, [])
 
     const onPay = () => {
         setPayForm(true)
@@ -63,7 +61,7 @@ const Detail = () => {
                             
 
                             {/* COMENTARIOS */}
-                            <Comments pkgd={setselectedPackage}/>
+                            <Comments pkgd={packages[0]}/>
                             
                         </> :
                         <h1 className='text-3xl text-gray-900 font-bold'>Paquete no encontrado</h1>              
