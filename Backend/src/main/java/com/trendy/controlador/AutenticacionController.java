@@ -1,12 +1,11 @@
 package com.trendy.controlador;
 
 import com.trendy.config.security.bean.UserDetailsServiceImpl;
-import com.trendy.entidades.dtos.autenticacion.AuthenticationDTO;
 import com.trendy.entidades.dtos.autenticacion.LoginDTO;
 import com.trendy.entidades.dtos.autenticacion.LoginResponseDTO;
 import com.trendy.entidades.dtos.autenticacion.RegistrationDTO;
 import com.trendy.entidades.dtos.cliente.ClienteInfoDTO;
-import com.trendy.servicio.ClienteService;
+import com.trendy.servicio.cliente.ClienteService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.ExampleObject;

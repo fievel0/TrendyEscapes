@@ -1,8 +1,7 @@
 package com.trendy.controlador;
 
-import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.trendy.entidades.dtos.cliente.ClienteInfoDTO;
-import com.trendy.servicio.ClienteService;
+import com.trendy.servicio.cliente.ClienteService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.ExampleObject;
@@ -22,9 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/clientes")
 public class ClienteController {
 
-
     private final ClienteService clienteService;
-
 
 
     public ClienteController(ClienteService clienteService){

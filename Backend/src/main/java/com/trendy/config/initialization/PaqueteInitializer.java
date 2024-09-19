@@ -1,9 +1,8 @@
-package com.trendy.config.initialization.impl;
+package com.trendy.config.initialization;
 
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.trendy.config.initialization.DataInitializer;
 import com.trendy.entidades.Paquete.Ciudad;
 import com.trendy.entidades.Paquete.Pais;
 import com.trendy.entidades.Paquete.Paquete;
@@ -14,20 +13,15 @@ import com.trendy.repositorio.PaqueteRepository;
 import com.trendy.repositorio.TipoPaqueteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.annotation.Order;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 
-@Service
-@Order(1)
-public class PaqueteInitializer implements DataInitializer {
+@Component
+public class PaqueteInitializer {
 
     private final PaisRepository paisRepository;
 
@@ -49,7 +43,6 @@ public class PaqueteInitializer implements DataInitializer {
         this.paqueteRepository = paqueteRepository;
     }
 
-    @Override
     public void initialize() {
         // Si ya hay paquetes entonces ignoramos la inicialización
         if(paqueteRepository.count() != 0)  return ;

@@ -16,7 +16,8 @@ import lombok.*;
 public class Paquete {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_paquete;
+    @Column(name = "id_paquete")
+    private Long idPaquete;
 
     @Column(name = "nombre_paquete", nullable = false, length = 100)
     private String nombrePaquete;

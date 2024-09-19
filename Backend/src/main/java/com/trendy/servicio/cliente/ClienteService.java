@@ -1,4 +1,4 @@
-package com.trendy.servicio;
+package com.trendy.servicio.cliente;
 
 import com.trendy.entidades.cliente.Cliente;
 import com.trendy.entidades.dtos.cliente.ClienteInfoDTO;
