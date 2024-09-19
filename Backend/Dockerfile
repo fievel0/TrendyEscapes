@@ -7,7 +7,7 @@ RUN apk add --no-cache maven
 WORKDIR /app
 
 # Copiar pom.xml y src desde el subdirectorio Backend
-COPY Backend/pom.xml .
+COPY Backend/pom.xml ./
 COPY Backend/src ./src
 
 # Ejecutar Maven para construir el proyecto y generar el JAR
@@ -20,4 +20,4 @@ RUN ls target/
 COPY target/backend-0.0.1-SNAPSHOT.jar app.jar
 
 # Ejecutar la aplicación con el archivo JAR generado
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
