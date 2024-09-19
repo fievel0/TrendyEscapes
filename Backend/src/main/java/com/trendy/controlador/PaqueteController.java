@@ -158,4 +158,83 @@ public class PaqueteController {
         return ResponseEntity.ok(paquetesEnBase);
     }
 
+
+    @Operation(
+            summary = "Obtener un paquete por ID",
+            description = "Obtiene un paquete específico del catálogo utilizando su ID único.",
+            security = @SecurityRequirement(name = "Security Token"),
+            parameters = {
+                    @Parameter(name = "id", description = "ID del paquete a recuperar", required = true, example = "1")
+            }
+    )
+    @ApiResponses(value = {
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "Recuperación exitosa del paquete",
+                    content = @Content(
+                            mediaType = "application/json",
+                            schema = @Schema(implementation = PaqueteDTO.class),
+                            examples = @ExampleObject(
+                                    name = "Respuesta del Paquete",
+                                    summary = "Ejemplo de una respuesta exitosa",
+                                    value = """
+                                {
+                                    "id": 1,
+                                    "nombre": "Escapada Tropical",
+                                    "descripcion": "Un viaje relajante a islas tropicales con todas las comodidades.",
+                                    "costo": 1200,
+                                    "hotel": true,
+                                    "foto": "escapada_tropical.jpg",
+                                    "tipoPaquete": "SELVA",
+                                    "pais": "Brasil",
+                                    "ciudades": ["Río de Janeiro", "São Paulo"]
+                                }
+                                """
+                            )
+                    )
+            ),
+            @ApiResponse(
+                    responseCode = "404",
+                    description = "Paquete no encontrado",
+                    content = @Content(
+                            mediaType = "application/json",
+                            examples = @ExampleObject(
+                                    name = "Paquete No Encontrado",
+                                    summary = "Ejemplo de respuesta de paquete no encontrado",
+                                    value = """
+                                {
+                                    "status": 404,
+                                    "message": "Paquete no encontrado con id: 15",
+                                    "timestamp": "2024-09-19T12:00:00Z"
+                                }
+                                """
+                            )
+                    )
+            ),
+            @ApiResponse(
+                    responseCode = "401",
+                    description = "No autorizado - Token de autenticación inválido o ausente",
+                    content = @Content(
+                            mediaType = "application/json",
+                            examples = @ExampleObject(
+                                    name = "Ejemplo No Autorizado",
+                                    summary = "Ejemplo de una solicitud no autorizada debido a un token inválido o ausente",
+                                    value = """
+                                {
+                                    "status": 401,
+                                    "message": "Token es inválido o no autorizado. Por favor ingresar nuevamente",
+                                    "timestamp": "2024-09-19T12:10:00Z"
+                                }
+                                """
+                            )
+                    )
+            )
+    })
+    @Transactional(readOnly = true)
+    @GetMapping("/{id}")
+    public ResponseEntity<PaqueteDTO> getPaquete(@PathVariable("id") Long id){
+        PaqueteDTO paqueteDTO = paqueteService.getSinglePaquete(id);
+        return ResponseEntity.ok(paqueteDTO);
+    }
+
 }
