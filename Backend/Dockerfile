@@ -16,8 +16,8 @@ RUN mvn clean package -DskipTests
 # Verificar que el archivo JAR esté en el directorio target
 RUN ls target/
 
-# Copiar el archivo JAR generado desde el subdirectorio Backend/target
-COPY Backend/target/backend-0.0.1-SNAPSHOT.jar app.jar
+# Copiar el archivo JAR generado desde el directorio target
+COPY target/backend-0.0.1-SNAPSHOT.jar app.jar
 
 # Ejecutar la aplicación con el archivo JAR generado
 ENTRYPOINT ["java", "-jar", "/app.jar"]
