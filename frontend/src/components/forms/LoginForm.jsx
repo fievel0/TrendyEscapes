@@ -1,6 +1,9 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import UserContext from "../../context/userContext";
 
-const LoginForm = ({loginFoo, registerFoo, cancelFoo, registerBtn}) => {
+const LoginForm = ({hangleLogin, registerFoo, cancelFoo, registerBtn}) => {
+	const { loginFoo } = useContext(UserContext);
+
     const [user, setUser] = useState({
 		email: '',		
 		password: '',
@@ -13,9 +16,25 @@ const LoginForm = ({loginFoo, registerFoo, cancelFoo, registerBtn}) => {
 		})   
 	}
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async(e) => {
+
 		e.preventDefault();
-		loginFoo(user);
+
+		const email = user.email;
+		const password = user.password;
+		try {
+			const res = await loginFoo(email, password);
+			if (res === 200) {
+				hangleLogin()
+			} else {
+				alert("Error al iniciar sesión");
+				console.log("🚀 ~ hangleLogin ~ res:", res);
+			}
+		} catch (error) {
+			alert("Error al iniciar sesión");
+			console.log("🚀 ~ hangleLogin ~ error:", error);
+		}
+
 	}
 
   return (

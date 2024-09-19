@@ -1,15 +1,18 @@
-import { useState , useEffect } from "react";
+import { useState , useEffect, useContext } from "react";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import LoginForm from "../../forms/LoginForm";
 import RegisterForm from "../../forms/RegisterForm";
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 import MobileMenu from "./MobileMenu";
+import Modal from "../../ui/Modal/Modal";
+import UserContext from "../../../context/userContext";
 
 
 const Navbar = () => {
     const [isHome, setIsHome] = useState(null)
     const [showMenu, setShowMenu] = useState(false)
+    const { user, logOut } = useContext(UserContext);
 
     /* esconder el footer en home */
     const location = useLocation();
@@ -25,6 +28,10 @@ const Navbar = () => {
     const [login, setLogin] = useState(false)
     const [register, setRegister] = useState(false)
 
+    const [loginAccept, setLoginAccept] = useState(false);
+    const [registerAccept, setRegisterAccept] = useState(false);
+    const [userModal, setUserModal] = useState(false);
+
     const handleLoginForm = () => {
         setLogin(!login)
     }
@@ -34,24 +41,33 @@ const Navbar = () => {
         setRegister(!register)
     }
 
-    const hangleLogin = (user) => {
-        handleLoginForm()
-        console.log(user)
+    const hangleLogin = () => {
+        setLoginAccept(true)
+        setLogin(false)
     }
 
-    const hangleRegister = (user) => {
-        handleRegisterForm()
-        console.log(user)
+    const hangleRegister = () => {
+        setRegisterAccept(true)
+        setRegister(false)
     }
 
     const closeMenu = () => {
         setShowMenu(false)
     }
 
+    const hangleLogOut = () => {
+        setUserModal(false)
+        logOut()
+    }
+
+
 
 
     return (
         <>
+            {loginAccept && <Modal message="Login exitoso" foo={() => setLoginAccept(false)} fooMsg="Aceptar"/>}
+            {registerAccept && <Modal message="Registro exitoso" foo={() => setRegisterAccept(false)} fooMsg="Aceptar"/>}   
+            {userModal && <Modal message={`Bienvenido ${user}`} foo={() => setUserModal(false)} fooMsg="Aceptar" fooB={hangleLogOut} fooBMsg="Cerrar Sesión"/>}
             <header className={isHome ? 'hidden' :"bg-white"}>
                 <nav
                     className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -94,6 +110,8 @@ const Navbar = () => {
                         </Link>
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+                        {user ? 
+                        <p className="border border-solid rounded-lg p-2 cursor-pointer hover:shadow-lg transition" onClick={() => setUserModal(true)}>Bienvenido {user}</p> :
                         <div className="flex space-x-2">
                             <button className="bg-secundary rounded-xl p-2 text-gray-900 hover:bg-primary hover:text-gray-700 transition duration-300 ease-in-out" onClick={handleLoginForm}>
                                 Log in
@@ -101,15 +119,15 @@ const Navbar = () => {
                             <button className="bg-primary rounded-xl p-2 text-gray-900 hover:bg-white hover:text-gray-700 transition duration-300 ease-in-out" onClick={handleRegisterForm}>
                                 Register <span aria-hidden="true">&rarr;</span>
                             </button>
-                        </div>
+                        </div> }
                     </div>
                     {showMenu && <MobileMenu closeMenu={closeMenu} login={handleLoginForm} register={handleRegisterForm}/>}
                 </nav>
             </header>
 
 
-            {login && <LoginForm loginFoo={hangleLogin} cancelFoo={handleLoginForm} />}
-            {register && <RegisterForm cancelFoo={hangleRegister} />}
+            {login && <LoginForm hangleLogin={hangleLogin} cancelFoo={handleLoginForm} />}
+            {register && <RegisterForm hangleRegister={hangleRegister} cancelFoo={handleRegisterForm}  />}
 
         </>
     );
