@@ -30,6 +30,7 @@ public class SecurityConfig {
                 .sessionManagement(sessionMngConfig -> sessionMngConfig.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> {
                     auth.requestMatchers(HttpMethod.POST, "/auth/**").permitAll();
+                    auth.requestMatchers(HttpMethod.GET, "/images/**").permitAll();
                     auth.requestMatchers("/swagger-ui/**",
                             "/swagger-ui.html/**",
                             "/swagger-resources/*",
