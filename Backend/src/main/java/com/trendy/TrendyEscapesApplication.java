@@ -11,10 +11,6 @@ import java.util.Optional;
 @SpringBootApplication
 public class TrendyEscapesApplication  {
 
-
-    @Autowired
-    ClienteRepository clienteRepository;
-
     public static void main(String[] args) {
         SpringApplication.run(TrendyEscapesApplication.class, args);
     }
