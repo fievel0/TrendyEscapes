@@ -114,7 +114,7 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
-                    <mainClass>TrendyEscapesApplication</mainClass> <!-- Agrega esto -->
+                    <mainClass>com.trendy.TrendyEscapesApplication</mainClass> <!-- Agrega esto -->
                 </configuration>
             </plugin>
 
@@ -156,7 +156,7 @@
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                             <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                            <mainClass>TrendyEscapesApplication</mainClass>
+                            <mainClass>com.trendy.TrendyEscapesApplication</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
