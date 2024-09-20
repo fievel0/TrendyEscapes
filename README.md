@@ -26,6 +26,9 @@ Con Trendy Escapes, explorar el mundo y documentar cada paso del viaje nunca fue
 ### Software de administración del proyecto
 https://trello.com/b/un8cgUtT/no-country-c20-44-n-java-react
 
+### Enlace Figma: 
+https://www.figma.com/proto/uvfHwC4zivsyawLNDCnO10/Book-de-Viajes-No-Country-wireframe?node-id=214-1556&node-type=CANVAS&t=HXeZohBYd5fSW8tP-0&scaling=min-zoom&content-scaling=fixed&page-id=214%3A1556&starting-point-node-id=214%3A1557
+
 ### Tecnologías utilizadas
 #### Frontend
 -   [React](https://reactjs.org/)
