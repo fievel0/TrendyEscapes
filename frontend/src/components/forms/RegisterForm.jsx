@@ -58,14 +58,14 @@ const RegisterForm = ({cancelFoo, hangleRegister}) => {
 		<>
 			{loading && <Loader />}
 			<div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 backdrop-blur-sm z-50 flex items-center justify-center mobile:items-start p-4 overflow-x-scroll">
-				<form className="flex flex-col gap-8 max-w-[500px] min-w-[550px] mobile:min-w-[300px] bg-white p-10 rounded-lg shadow-md relative" onSubmit={handleSubmit}>
+				<form className="flex flex-col gap-8 max-w-[500px] min-w-[550px] mobile:w-full mobile:min-w-[300px] bg-white p-10 mobile:p-6 rounded-lg shadow-md relative" onSubmit={handleSubmit}>
 					<legend className="font-bold text-2xl">Registro</legend>
 					<div className=" relative">
 						<label htmlFor="nombre" className='block mb-2'>Nombre Completo</label>
 						<input type="text" id="nombre" name='nombre' className='w-full border-solid border rounded-lg px-2 py-2' placeholder="Nombre" required onChange={handleChange}/>
 						{errorsForms.nombre && <p className="absolute w-full text-red-500 text-xs">{errorsForms.nombre}</p>}
 					</div>
-					<div className="flex gap-4 mobile:flex-col mobile:gap-0  ">
+					<div className="flex gap-4 mobile:flex-col mobile:gap-8  ">
 						<div className="w-1/2 mobile:w-full relative">
 							<label htmlFor="email" className='block mb-2'>Email</label>
 							<input type="email" id="email" name="email" className='w-full border-solid border rounded-lg px-2 py-2' placeholder="Email" required onChange={handleChange}/>
@@ -78,7 +78,7 @@ const RegisterForm = ({cancelFoo, hangleRegister}) => {
 						</div>
 					</div>
 
-					<div className="flex gap-4 mobile:flex-col mobile:gap-0 ">
+					<div className="flex gap-4 mobile:flex-col mobile:gap-8 ">
 						<div className="w-1/2 mobile:w-full relative">
 							<label htmlFor="fechaNacimiento" className='block mb-2'>Fecha de Nacimiento</label>
 							<input type="date" id="fechaNacimiento" name="fechaNacimiento" className='w-full border-solid border rounded-lg px-2 py-2' required onChange={handleChange}/>
@@ -103,7 +103,7 @@ const RegisterForm = ({cancelFoo, hangleRegister}) => {
 						{errorsForms.direccion && <p className="absolute w-full text-red-500 text-xs">{errorsForms.direccion}</p>}
 					</div>
 
-					<div className="flex gap-4 mobile:flex-col mobile:gap-0 mb-10 relative">
+					<div className="flex gap-4 mobile:flex-col mobile:gap-8 mb-10 relative">
 						<div className="w-1/2 mobile:w-full relative">
 							<label htmlFor="password" className='block mb-2'>Contraseña</label>
 							<input type="password" id="password" name="password" className='w-full border-solid border rounded-lg px-2 py-2' placeholder="Contraseña" required onChange={handleChange}/>				

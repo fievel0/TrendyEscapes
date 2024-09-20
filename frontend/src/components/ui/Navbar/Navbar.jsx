@@ -68,7 +68,7 @@ const Navbar = () => {
             {loginAccept && <Modal message="Login exitoso" foo={() => setLoginAccept(false)} fooMsg="Aceptar"/>}
             {registerAccept && <Modal message="Registro exitoso" foo={() => setRegisterAccept(false)} fooMsg="Aceptar"/>}   
             {userModal && <Modal message={`Bienvenido ${user}`} foo={() => setUserModal(false)} fooMsg="Aceptar" fooB={hangleLogOut} fooBMsg="Cerrar Sesión"/>}
-            <header className={isHome ? 'hidden' :"bg-white"}>
+            <header className={isHome ? 'hidden' :"bg-white shadow-lg"}>
                 <nav
                     className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
                     aria-label="Global"
