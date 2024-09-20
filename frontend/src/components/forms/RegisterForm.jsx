@@ -33,6 +33,7 @@ const RegisterForm = ({cancelFoo, hangleRegister}) => {
 		const newUser = {...user, autenticacion: {email: user.email, password: user.password}};
 		if (user.password !== user.repeatPassword) {
 			setErrors({ repeatPassword: "Las contraseñas no coinciden" });
+			setLoading(false);			
 			return;
 		}
 		try {
