@@ -19,7 +19,6 @@ Con Trendy Escapes, explorar el mundo y documentar cada paso del viaje nunca fue
 | Mercedes Soto Bejarano          | Frontend   | [LinkedIn](https://ar.linkedin.com/in/emilce-mercedes-soto-bejarano) | [Visita mi repositorio](https://github.com/MerSb) |
 | Eneas Baroni         | Frontend          | [LinkedIn](https://www.linkedin.com/in/eneasbaroni) |[Visita mi repositorio](https://github.com/eneasbaroni) |
 | Álvaro Johansen      | Frontend      | [LinkedIn](https://www.linkedin.com/in/%C3%A1lvaro-johansen-bb147a246) | [Visita mi repositorio](https://github.com/Alvarojohansen) |
-| Nicolle Rosa          | Backend   | [LinkedIn](https://www.linkedin.com/in/nicolle-rosa/) | [Visita mi repositorio](https://github.com/Nicoleta0c) |
 | Fabian Paucar         | Backend          | [LinkedIn](https://www.linkedin.com/in/fabian-paucar/) | [Visita mi repositorio](https://github.com/fievel0) |
 | Julian David Peña      | Backend      | [LinkedIn](https://www.linkedin.com/in/julian-pena-java) | [Visita mi repositorio](https://github.com/julian-pena) |
 | Jorge Peyrano      | QA Tester      | [LinkedIn](https://www.linkedin.com/in/jorge-peyrano) | [Visita mi repositorio](https://github.com/Japeyr) |
@@ -41,6 +40,7 @@ Con Trendy Escapes, explorar el mundo y documentar cada paso del viaje nunca fue
 -   [Plan de Pruebas General](https://drive.google.com/file/d/1H1gQidOxZ6Oot1t7y06bR38F-ALkFY2N/view?usp=sharing)
 -   [Plan de Pruebas para Registro y Autenticación](https://drive.google.com/file/d/1nRkL0tiZFan1Y0i6S_cnhSQqCPQcUuRq/view?usp=sharing)
 -   [Plan de Pruebas para Gestión de Selección y Registros de Viajes](https://drive.google.com/file/d/1abkliIYEEXdobbJmgX40xeDvj1l27oKC/view?usp=sharing)
+-   [Casos de Pruebas, Reporte de Defectos y Reporte de Mejoras](https://docs.google.com/spreadsheets/d/1uhr0NdkPzxFAzw4K47UYJ1PY9WaYCKN33-8aq461ehE/edit?usp=sharing)
 
 ### Video Promocional
 
