@@ -23,6 +23,8 @@ Con Trendy Escapes, explorar el mundo y documentar cada paso del viaje nunca fue
 | Julian David Peña      | Backend      | [LinkedIn](https://www.linkedin.com/in/julian-pena-java) | [Visita mi repositorio](https://github.com/julian-pena) |
 | Jorge Peyrano      | QA Tester      | [LinkedIn](https://www.linkedin.com/in/jorge-peyrano) | [Visita mi repositorio](https://github.com/Japeyr) |
 
+### Software de administración del proyecto
+https://trello.com/b/un8cgUtT/no-country-c20-44-n-java-react
 
 ### Tecnologías utilizadas
 #### Frontend
