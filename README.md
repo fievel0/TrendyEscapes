@@ -45,7 +45,10 @@ Con Trendy Escapes, explorar el mundo y documentar cada paso del viaje nunca fue
 ### Video Promocional
 
 
-https://github.com/user-attachments/assets/8906e4d1-e3a8-4c99-945e-6b557716f0f7
+
+https://github.com/user-attachments/assets/b9aa1895-f171-4365-bf04-1eb3bdae1d8f
+
+
 
 
 
