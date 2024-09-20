@@ -1,7 +1,12 @@
-const PackageDetail = ({pkgd, onPay}) => {   
+const PackageDetail = ({pkgd, onPay, hangleCost}) => { 
+    
+    const handlePrice = (e) => {
+        hangleCost(e.target.value * pkgd.costo)
+    }
+     
     return (
         <div className="w-[1200px] notebook:w-full  flex flex-wrap mobile:flex-col mobile:flex-nowrap mobile:items-center justify-center my-6 mobile:px-6">
-            <img src={`/Images/packages${pkgd.foto}`} alt="imagen del paquete" className='w-1/2 mobile:w-full py-4 pr-4 pl-8 mobile:pr-0 mobile:pl-0 object-cover'/>
+            <img src={`/Images/packages${pkgd.foto}`} alt="imagen del paquete" className='w-1/2 mobile:w-full max-h-[500px] py-4 pr-4 pl-8 mobile:pr-0 mobile:pl-0 object-cover'/>
             <div className='w-1/2 mobile:w-full py-4 pl-4 pr-8 mobile:pr-0 mobile:pl-0'>
                 <h1 className='text-2xl font-bold mb-2'>{pkgd.nombre}</h1>
                 {/* <div className='flex flex-wrap gap-2'>
@@ -14,7 +19,7 @@ const PackageDetail = ({pkgd, onPay}) => {
                 <div className="flex mobile:flex-col w-full gap-2">
                     <div className="flex flex-col w-1/2 mobile:w-full justify-between">
                         <label htmlFor="persons" className='block mb-2'>Cantidad de pasajeros</label>
-                        <select name="persons" id="" className='w-full border-solid border rounded-lg py-1 px-2 mb-4'>
+                        <select name="persons" id="" className='w-full border-solid border rounded-lg py-1 px-2 mb-4' onChange={handlePrice} >
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>

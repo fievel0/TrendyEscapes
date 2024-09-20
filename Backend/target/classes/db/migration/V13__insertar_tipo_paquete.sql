@@ -1,0 +1,16 @@
+INSERT INTO tipo_paquete (descripcion) VALUES
+('URBANO'),
+('PLAYA'),
+('MONTAÑA'),
+('RURAL'),
+('HISTORICO'),
+('ISLAS'),
+('DESIERTO'),
+('SELVA'),
+('CAPITALES'),
+('MEDIEVALES'),
+('ROMANTICO'),
+('AVENTURA'),
+('CRUCERO'),
+('INVIERNO'),
+('CULTURAL');

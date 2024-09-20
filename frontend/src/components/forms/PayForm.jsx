@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const PayForm = ({onPayment, closePayForm}) => {
+const PayForm = ({onPayment, closePayForm, cost}) => {
     const [user, setUser] = useState({
         name: '',
         email: '',
@@ -28,7 +28,7 @@ const PayForm = ({onPayment, closePayForm}) => {
     <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 backdrop-blur-sm z-50 flex items-center mobile:items-start justify-center p-4 overflow-x-scroll">
         <form className="flex flex-col max-w-[500px] bg-white p-10 rounded-lg shadow-md" onSubmit={handleSubmit}>
             <legend className="font-bold text-2xl mb-4">Formulario de Pago</legend>
-            <p className="text-[18px] mb-4">Total a pagar: $100</p>
+            <p className="text-[18px] mb-4">{`Total a pagar: $${cost}`}</p>
             <div>
                 <label htmlFor="name" className='block mb-2'>Nombre Completo</label>
                 <input type="text" id="name" name='name' className='w-full border-solid border rounded-lg px-2 mb-4 py-2' placeholder="Nombre" required onChange={handleChange}/>
