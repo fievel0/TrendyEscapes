@@ -1,5 +1,6 @@
 package com.trendy.config.security.jwt;
 
+import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -12,15 +13,12 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
-
 import java.io.IOException;
-import java.util.ArrayList;
+import java.time.format.DateTimeFormatter;
 import java.util.Collection;
-import java.util.List;
 
 public class JwtTokenValidator extends OncePerRequestFilter {
 
@@ -39,29 +37,39 @@ public class JwtTokenValidator extends OncePerRequestFilter {
 
         String jwtToken = request.getHeader(HttpHeaders.AUTHORIZATION);
 
-        if(jwtToken != null){
+        try {
+            if (jwtToken != null) {
 
-            jwtToken = jwtToken.substring(7); // Remove "Bearer "
-            DecodedJWT decodedJWT =  jwtUtils.validateToken(jwtToken);
-            String userName = jwtUtils.getUserName(decodedJWT);
+                jwtToken = jwtToken.substring(7); // Remove "Bearer "
+                DecodedJWT decodedJWT = jwtUtils.validateToken(jwtToken);
+                String userName = jwtUtils.getUserName(decodedJWT);
 
-            String stringAuthorities = jwtUtils.getSpecificClaim(decodedJWT, "authorities").asString();
+                String stringAuthorities = jwtUtils.getSpecificClaim(decodedJWT, "authorities").asString();
 
-            Collection<? extends GrantedAuthority> authorities = AuthorityUtils.commaSeparatedStringToAuthorityList(stringAuthorities); // Assign ROLE_USER
+                Collection<? extends GrantedAuthority> authorities = AuthorityUtils.commaSeparatedStringToAuthorityList(stringAuthorities); // Assign ROLE_USER
 
-            SecurityContext context = SecurityContextHolder.getContext();
-            Authentication authentication = new UsernamePasswordAuthenticationToken(userName, null, authorities);
-            context.setAuthentication(authentication);
-            SecurityContextHolder.setContext(context);
-            // Log the authorities
-            System.out.println("Authorities assigned to this request: " + authorities);
+                SecurityContext context = SecurityContextHolder.getContext();
+                Authentication authentication = new UsernamePasswordAuthenticationToken(userName, null, authorities);
+                context.setAuthentication(authentication);
+                SecurityContextHolder.setContext(context);
+            }
+            filterChain.doFilter(request, response);
+        } catch (JWTVerificationException e){
+            logger.error("Error durante verificación de token JWT:", e);
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            response.setContentType("application/json");
+            response.setCharacterEncoding("UTF-8");
 
-            System.out.println("Authentication object set in SecurityContextHolder: " + authentication); // Log authentication object
-
+            // Respuesta en formato JSON
+            String jsonResponse = String.format(
+                    "{ \"error\": \"Unauthorized\", " +
+                            "\"details\": \"%s\", " +
+                            "\"timestamp\": \"%s\" }",
+                    e.getMessage(),
+                    java.time.LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
+            );
+            response.getWriter().write(jsonResponse);
         }
-        filterChain.doFilter(request, response);
-
     }
-
 
 }

@@ -3,6 +3,7 @@ package com.trendy.entidades.Paquete;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,25 +16,30 @@ import lombok.*;
 public class Paquete {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_paquete;
+    @Column(name = "id_paquete")
+    private Long idPaquete;
 
-    @Column(name = "nombre_paquete", nullable = false, unique = true, length = 100)
+    @Column(name = "nombre_paquete", nullable = false, length = 100)
     private String nombrePaquete;
+
+    @Column(name = "descripcion")
+    private String descripcion;
 
     @Column(name = "costo_paquete")
     private int costoPaquete;
 
-    @Column(name = "hotel", length = 255)
-    private String hotel;
+    @Column(name = "hotel")
+    private boolean hotel;
 
     // Considera almacenar solo la URL si es posible
     @Column(name = "foto")
-    private Byte foto;
+    private String foto;
 
     @ManyToMany
     @JoinTable(name = "paquete_ciudad",
             joinColumns = @JoinColumn(name = "id_paquete"),
             inverseJoinColumns = @JoinColumn(name = "id_ciudad"))
+    @JsonProperty("ciudades")
     private List<Ciudad> ciudadList = new ArrayList<>();
 
     @ManyToOne

@@ -1,0 +1,480 @@
+[
+  {
+    "nombrePaquete": "Escapada Urbana a Nueva York",
+    "costoPaquete": 1200,
+    "hotel": true,
+    "ciudades": ["Nueva York"],
+    "tipoPaquete": "URBANO",
+    "pais": "United States",
+    "descripcion": "Sumérgete en la vibrante atmósfera de Nueva York, la ciudad que nunca duerme. Explora lugares emblemáticos como Times Square, la Estatua de la Libertad y Central Park, mientras disfrutas de una estancia cómoda en el lujoso Hilton Midtown. Ideal para quienes desean vivir una experiencia cosmopolita única."
+  },
+  {
+    "nombrePaquete": "Aventura en la Selva Amazónica",
+    "costoPaquete": 800,
+    "hotel": false,
+    "ciudades": ["Manaos", "Leticia"],
+    "tipoPaquete": "SELVA",
+    "pais": "Brazil",
+    "descripcion": "Embárcate en una aventura por la selva amazónica, explorando la biodiversidad única de esta región. Navega por el majestuoso río Amazonas, interactúa con comunidades locales y experimenta la naturaleza en su estado más puro. Esta escapada incluye actividades al aire libre sin alojamiento en hotel."
+  },
+  {
+    "nombrePaquete": "Ruta Medieval por Castilla y León",
+    "costoPaquete": 750,
+    "hotel": true,
+    "ciudades": ["León", "Burgos", "Salamanca"],
+    "tipoPaquete": "MEDIEVALES",
+    "pais": "Spain",
+    "descripcion": "Viaja al pasado y descubre la riqueza histórica de Castilla y León. Visita catedrales góticas, castillos y monasterios medievales mientras te alojas en el Parador de León, una joya histórica en sí misma. Este tour te llevará por ciudades con una gran herencia cultural y arquitectónica."
+  },
+  {
+    "nombrePaquete": "Tour por las Capitales Europeas",
+    "costoPaquete": 2100,
+    "hotel": true,
+    "ciudades": ["París", "Londres", "Berlín", "Ámsterdam"],
+    "tipoPaquete": "CAPITALES",
+    "pais": "France",
+    "descripcion": "Explora las ciudades más emblemáticas de Europa en un solo viaje. Desde la elegancia de París hasta la historia viva de Berlín, pasando por la cosmopolita Ámsterdam y la multicultural Londres, este tour te ofrece la oportunidad de descubrir lo mejor de la cultura europea con alojamiento de lujo."
+  },
+  {
+    "nombrePaquete": "Descanso en las Islas Maldivas",
+    "costoPaquete": 3500,
+    "hotel": true,
+    "ciudades": ["Malé"],
+    "tipoPaquete": "ISLAS",
+    "pais": "Maldives",
+    "descripcion": "Disfruta de unas vacaciones de ensueño en las Maldivas, alojándote en el lujoso Soneva Fushi Resort. Relájate en playas de arena blanca, nada en aguas cristalinas y explora arrecifes de coral en un entorno paradisíaco. Un paquete ideal para quienes buscan una experiencia de lujo y tranquilidad."
+  },
+  {
+    "nombrePaquete": "Exploración por el Desierto del Sahara",
+    "costoPaquete": 1100,
+    "hotel": false,
+    "ciudades": ["Merzouga", "Zagora"],
+    "tipoPaquete": "DESIERTO",
+    "pais": "Morocco",
+    "descripcion": "Descubre los misterios del Sahara con una travesía por sus vastas dunas. Vive la experiencia única de recorrer el desierto en camello y acampar bajo las estrellas. Sin alojamiento en hotel, esta es una opción para los más aventureros que desean sumergirse en la auténtica cultura marroquí."
+  },
+  {
+    "nombrePaquete": "Circuito por Ciudades Históricas de México",
+    "costoPaquete": 950,
+    "hotel": true,
+    "ciudades": ["Zacatecas", "Guanajuato", "San Miguel de Allende"],
+    "tipoPaquete": "HISTORICO",
+    "pais": "Mexico",
+    "descripcion": "Conoce la historia y cultura de México a través de sus ciudades coloniales más emblemáticas. Desde Zacatecas hasta San Miguel de Allende, disfrutarás de una rica mezcla de arte, arquitectura y tradiciones. Incluye estancia en el Hotel Quinta Real, un lugar lleno de encanto histórico."
+  },
+  {
+    "nombrePaquete": "Aventura en la Patagonia Chilena",
+    "costoPaquete": 1700,
+    "hotel": false,
+    "ciudades": ["Punta Arenas", "Puerto Natales"],
+    "tipoPaquete": "MONTAÑA",
+    "pais": "Chile",
+    "descripcion": "Explora los paisajes majestuosos de la Patagonia Chilena, desde glaciares hasta montañas imponentes. Un destino perfecto para los amantes de la naturaleza y el trekking. Sin alojamiento en hotel, este paquete ofrece una experiencia auténtica al aire libre, ideal para los más aventureros."
+  },
+  {
+    "nombrePaquete": "Vacaciones en la Riviera Maya",
+    "costoPaquete": 1600,
+    "hotel": true,
+    "ciudades": ["Cancún", "Playa del Carmen", "Tulum"],
+    "tipoPaquete": "PLAYA",
+    "pais": "Mexico",
+    "descripcion": "Descubre las hermosas playas de la Riviera Maya y explora las antiguas ruinas mayas. Este paquete incluye alojamiento en el Hotel Xcaret México, con acceso a parques naturales y actividades acuáticas. Perfecto para quienes buscan relajarse y disfrutar de las maravillas del Caribe mexicano."
+  },
+  {
+    "nombrePaquete": "Tour Cultural por Japón",
+    "costoPaquete": 2500,
+    "hotel": true,
+    "ciudades": ["Tokio", "Kioto", "Nara", "Osaka"],
+    "tipoPaquete": "HISTORICO",
+    "pais": "Japan",
+    "descripcion": "Sumérgete en la fascinante cultura japonesa mientras visitas sus ciudades más icónicas. Desde los templos antiguos de Kioto hasta la modernidad de Tokio, este recorrido te llevará por lo mejor de Japón. Incluye estancia en el lujoso Hotel Imperial de Tokio, asegurando comodidad y tradición."
+  },
+  {
+    "nombrePaquete": "Excursión a las Islas Galápagos",
+    "costoPaquete": 2900,
+    "hotel": false,
+    "ciudades": ["Isabela", "Santa Cruz", "San Cristóbal"],
+    "tipoPaquete": "ISLAS",
+    "pais": "Ecuador",
+    "descripcion": "Descubre la fauna única de las Islas Galápagos en esta excursión llena de naturaleza y aventura. Explora islas remotas, bucea con tortugas y observa especies que no encontrarás en ningún otro lugar. Un paquete sin alojamiento en hotel, ideal para los amantes de la vida silvestre y la exploración."
+  },
+  {
+    "nombrePaquete": "Safari en el Serengueti",
+    "costoPaquete": 2700,
+    "hotel": true,
+    "ciudades": ["Serengueti", "Ngorongoro"],
+    "tipoPaquete": "SELVA",
+    "pais": "Tanzania",
+    "descripcion": "Vive la experiencia única de un safari en el Serengueti. Observa de cerca a los grandes animales de la sabana africana y disfruta de espectaculares puestas de sol. El paquete incluye alojamiento en el exclusivo Four Seasons Lodge, ubicado en plena reserva natural."
+  },
+  {
+    "nombrePaquete": "Tour por las Capitales del Sudeste Asiático",
+    "costoPaquete": 2100,
+    "hotel": true,
+    "ciudades": ["Bangkok", "Kuala Lumpur", "Singapur"],
+    "tipoPaquete": "CAPITALES",
+    "pais": "Thailand",
+    "descripcion": "Descubre las joyas del sudeste asiático en este recorrido por las capitales más emocionantes de la región. Desde los templos de Bangkok hasta la modernidad de Singapur, este tour te ofrece lo mejor de cada destino. Incluye alojamiento en el lujoso Hotel Shangri-La, Bangkok."
+  },
+  {
+    "nombrePaquete": "Ruta del Vino en la Toscana",
+    "costoPaquete": 1400,
+    "hotel": true,
+    "ciudades": ["Florencia", "Siena", "Pisa"],
+    "tipoPaquete": "RURAL",
+    "pais": "Italy",
+    "descripcion": "Vive la magia de la Toscana con este tour que te llevará por sus viñedos más famosos. Disfruta de catas de vino, visita encantadores pueblos medievales y relájate en la elegancia de Villa Cora, Florencia. Perfecto para quienes buscan una combinación de naturaleza, historia y gastronomía."
+  },
+  {
+    "nombrePaquete": "Tour por las Islas Griegas",
+    "costoPaquete": 2300,
+    "hotel": true,
+    "ciudades": ["Santorini", "Mykonos", "Atenas"],
+    "tipoPaquete": "ISLAS",
+    "pais": "Greece",
+    "descripcion": "Embárcate en una aventura por las islas griegas más icónicas. Disfruta de las impresionantes vistas de Santorini, el glamour de Mykonos y la historia antigua de Atenas. Este paquete incluye alojamiento en el exclusivo Hotel Canaves Oia, Santorini, para una experiencia de lujo en el Egeo."
+  },
+  {
+    "nombrePaquete": "Circuito por las Rutas del Vino en Napa Valley",
+    "costoPaquete": 2000,
+    "hotel": true,
+    "ciudades": ["Napa", "Sonoma"],
+    "tipoPaquete": "RURAL",
+    "pais": "United States",
+    "descripcion": "Disfruta de una experiencia enológica única en Napa Valley, el corazón del vino en Estados Unidos. Visita bodegas de renombre, participa en catas exclusivas y relájate en el Hotel Carneros Resort, rodeado de viñedos. Un viaje ideal para los amantes del buen vino y la gastronomía gourmet."
+  },
+  {
+    "nombrePaquete": "Viaje a las Pirámides de Egipto",
+    "costoPaquete": 1900,
+    "hotel": true,
+    "ciudades": ["El Cairo", "Luxor", "Asuán"],
+    "tipoPaquete": "HISTORICO",
+    "pais": "Egypt",
+    "descripcion": "Descubre los misterios del Antiguo Egipto con este tour que te llevará a las pirámides de Giza, el Valle de los Reyes y templos icónicos como el de Karnak. Con alojamiento en el lujoso Hotel Marriott Mena House, tendrás vistas espectaculares de las pirámides mientras disfrutas de la historia."
+  },
+  {
+    "nombrePaquete": "Escapada Romántica a París",
+    "costoPaquete": 1800,
+    "hotel": true,
+    "ciudades": ["París"],
+    "tipoPaquete": "ROMANTICO",
+    "pais": "France",
+    "descripcion": "Vive una experiencia romántica en la ciudad del amor. Pasea por los Campos Elíseos, visita la Torre Eiffel y disfruta de una cena íntima con vistas al Sena. Este paquete incluye alojamiento en el Hotel Plaza Athénée, perfecto para una escapada inolvidable en pareja."
+  },
+  {
+    "nombrePaquete": "Excursión al Gran Cañón",
+    "costoPaquete": 700,
+    "hotel": false,
+    "ciudades": ["Gran Cañón"],
+    "tipoPaquete": "AVENTURA",
+    "pais": "United States",
+    "descripcion": "Explora el majestuoso Gran Cañón con este paquete de aventura. Realiza caminatas guiadas por sus impresionantes paisajes y disfruta de la naturaleza en su máxima expresión. Este paquete no incluye alojamiento en hotel, ideal para quienes buscan una experiencia de camping y contacto directo con la naturaleza."
+  },
+  {
+    "nombrePaquete": "Crucero por el Mediterráneo",
+    "costoPaquete": 2200,
+    "hotel": true,
+    "ciudades": ["Barcelona", "Marsella", "Roma", "Atenas"],
+    "tipoPaquete": "CRUCERO",
+    "pais": "Spain",
+    "descripcion": "Disfruta de un increíble crucero por el Mediterráneo visitando algunas de las ciudades más emblemáticas de Europa. Con escalas en Barcelona, Marsella, Roma y Atenas, este viaje incluye alojamiento en el lujoso crucero MSC Seaview, donde disfrutarás de una experiencia cinco estrellas en alta mar."
+  },
+  {
+    "nombrePaquete": "Safari Fotográfico en Sudáfrica",
+    "costoPaquete": 3000,
+    "hotel": true,
+    "ciudades": ["Johannesburgo", "Parque Kruger"],
+    "tipoPaquete": "SELVA",
+    "pais": "South Africa",
+    "descripcion": "Embárcate en un safari fotográfico en Sudáfrica, donde tendrás la oportunidad de capturar imágenes inolvidables de la fauna salvaje. Desde leones hasta elefantes, este tour te llevará por el famoso Parque Kruger. Incluye alojamiento en el lujoso Singita Lebombo Lodge, para una experiencia exclusiva en la naturaleza."
+  },
+  {
+    "nombrePaquete": "Escapada Rural en los Alpes Suizos",
+    "costoPaquete": 2400,
+    "hotel": true,
+    "ciudades": ["Interlaken", "Zermatt"],
+    "tipoPaquete": "MONTAÑA",
+    "pais": "Switzerland",
+    "descripcion": "Disfruta de la tranquilidad y belleza natural de los Alpes Suizos en esta escapada rural. Realiza caminatas por senderos alpinos y contempla vistas espectaculares de montañas como el icónico Matterhorn. El paquete incluye alojamiento en el exclusivo Hotel Zermatterhof, garantizando una estancia de lujo."
+  },
+
+  {
+    "nombrePaquete": "Aventura en la Selva Amazónica",
+    "costoPaquete": 2500,
+    "hotel": true,
+    "ciudades": ["Manaos"],
+    "tipoPaquete": "SELVA",
+    "pais": "Brazil",
+    "descripcion": "Sumérgete en la selva tropical más grande del mundo con este tour de aventura en el corazón de la Amazonía. Explora la biodiversidad única de la región, participa en excursiones guiadas y descansa en el ecolodge Amazon Rainforest Lodge, que te permitirá vivir una experiencia auténtica y ecológica."
+  },
+  {
+    "nombrePaquete": "Visita Cultural a Kioto",
+    "costoPaquete": 1800,
+    "hotel": true,
+    "ciudades": ["Kioto"],
+    "tipoPaquete": "CULTURAL",
+    "pais": "Japan",
+    "descripcion": "Explora los templos antiguos y jardines zen de Kioto, la antigua capital de Japón. Este viaje te llevará por los lugares más emblemáticos de la ciudad, como el Pabellón Dorado y el santuario Fushimi Inari. Incluye alojamiento en el lujoso Hotel The Ritz-Carlton Kyoto."
+  },
+  {
+    "nombrePaquete": "Rafting en el Río Colorado",
+    "costoPaquete": 1500,
+    "hotel": false,
+    "ciudades": ["Río Colorado"],
+    "tipoPaquete": "AVENTURA",
+    "pais": "United States",
+    "descripcion": "Si te gustan las emociones fuertes, este paquete de rafting por el Río Colorado es para ti. Disfruta de una aventura extrema en uno de los paisajes más impresionantes de Estados Unidos. Este paquete no incluye hotel, pero es ideal para quienes buscan una experiencia de campamento y adrenalina."
+  },
+  {
+    "nombrePaquete": "Tour de la Ruta 66 en Moto",
+    "costoPaquete": 3000,
+    "hotel": true,
+    "ciudades": ["Chicago", "Los Ángeles"],
+    "tipoPaquete": "AVENTURA",
+    "pais": "United States",
+    "descripcion": "Recorre la histórica Ruta 66 en una moto Harley-Davidson con este emocionante tour que te llevará de Chicago a Los Ángeles. Disfruta de paisajes icónicos, pequeñas ciudades y la libertad de la carretera. El paquete incluye alojamiento en hoteles seleccionados a lo largo de la ruta."
+  },
+  {
+    "nombrePaquete": "Exploración en los Glaciares de Alaska",
+    "costoPaquete": 2700,
+    "hotel": true,
+    "ciudades": ["Anchorage", "Juneau"],
+    "tipoPaquete": "AVENTURA",
+    "pais": "United States",
+    "descripcion": "Embárcate en una expedición única a los glaciares de Alaska, donde podrás disfrutar de impresionantes paisajes helados y avistamientos de fauna salvaje como ballenas y osos. Este paquete incluye alojamiento en cabañas de lujo en Anchorage y excursiones guiadas por expertos locales."
+  },
+  {
+    "nombrePaquete": "Safari en el Desierto del Sahara",
+    "costoPaquete": 2200,
+    "hotel": true,
+    "ciudades": ["Marrakech", "Merzouga"],
+    "tipoPaquete": "AVENTURA",
+    "pais": "Morocco",
+    "descripcion": "Vive la experiencia de un safari en el desierto del Sahara, donde podrás montar en camello, explorar dunas y disfrutar de una noche bajo las estrellas. El paquete incluye alojamiento en campamentos de lujo y visitas guiadas a oasis y pueblos bereberes."
+  },
+  {
+    "nombrePaquete": "Tour Histórico por Roma y la Toscana",
+    "costoPaquete": 2000,
+    "hotel": true,
+    "ciudades": ["Roma", "Florencia", "Siena"],
+    "tipoPaquete": "HISTORICO",
+    "pais": "Italy",
+    "descripcion": "Sumérgete en la historia de Italia con este tour por Roma y la Toscana. Descubre el Coliseo, el Vaticano y los viñedos de la Toscana mientras te alojas en hoteles boutique de lujo. Este paquete es perfecto para quienes buscan una experiencia cultural e histórica en el corazón de Italia."
+  },
+  {
+    "nombrePaquete": "Relajación en las Playas de Maldivas",
+    "costoPaquete": 3500,
+    "hotel": true,
+    "ciudades": ["Malé"],
+    "tipoPaquete": "PLAYA",
+    "pais": "Maldives",
+    "descripcion": "Disfruta de una escapada de lujo en las paradisíacas playas de las Maldivas. Este paquete incluye alojamiento en un resort de cinco estrellas con bungalows sobre el agua, snorkel en arrecifes de coral y cenas gourmet con vistas al océano."
+  },
+  {
+    "nombrePaquete": "Caminata por el Camino de Santiago",
+    "costoPaquete": 1800,
+    "hotel": true,
+    "ciudades": ["Santiago de Compostela"],
+    "tipoPaquete": "CULTURAL",
+    "pais": "Spain",
+    "descripcion": "Embárcate en una experiencia espiritual y cultural con esta caminata por el famoso Camino de Santiago. Este paquete incluye alojamiento en posadas a lo largo del camino, además de guías y transporte de equipaje para garantizar una experiencia cómoda y enriquecedora."
+  },
+  {
+    "nombrePaquete": "Crucero por los Fiordos Noruegos",
+    "costoPaquete": 2800,
+    "hotel": true,
+    "ciudades": ["Bergen", "Stavanger"],
+    "tipoPaquete": "CRUCERO",
+    "pais": "Norway",
+    "descripcion": "Navega por los impresionantes fiordos de Noruega en este crucero de lujo que te llevará por ciudades como Bergen y Stavanger. Disfruta de paisajes naturales increíbles, glaciares y cascadas, con todas las comodidades de un crucero cinco estrellas."
+  },
+  {
+    "nombrePaquete": "Tour por la Ruta Maya en México",
+    "costoPaquete": 2100,
+    "hotel": true,
+    "ciudades": ["Cancún", "Chichen Itzá", "Tulum"],
+    "tipoPaquete": "HISTORICO",
+    "pais": "Mexico",
+    "descripcion": "Explora la fascinante civilización maya con este tour que te llevará por las ruinas de Chichen Itzá, Tulum y otros sitios arqueológicos en la Península de Yucatán. Incluye alojamiento en resorts de lujo en Cancún y guías expertos en historia maya."
+  },
+  {
+    "nombrePaquete": "Excursión a Machu Picchu",
+    "costoPaquete": 2300,
+    "hotel": true,
+    "ciudades": ["Cusco", "Machu Picchu"],
+    "tipoPaquete": "HISTORICO",
+    "pais": "Peru",
+    "descripcion": "Descubre la maravilla del mundo antiguo de Machu Picchu con esta excursión que incluye visitas a Cusco y el Valle Sagrado. Alojamiento en el lujoso hotel Inkaterra Machu Picchu Pueblo y guías expertos que te acompañarán en la exploración de este sitio histórico."
+  },
+  {
+    "nombrePaquete": "Escapada de Esquí en Aspen",
+    "costoPaquete": 3200,
+    "hotel": true,
+    "ciudades": ["Aspen"],
+    "tipoPaquete": "MONTAÑA",
+    "pais": "United States",
+    "descripcion": "Disfruta de una escapada de lujo en las pistas de Aspen, uno de los destinos de esquí más exclusivos del mundo. Este paquete incluye alojamiento en el lujoso Hotel St. Regis Aspen Resort y acceso directo a las pistas, con todas las comodidades para una experiencia invernal inolvidable."
+  },
+  {
+    "nombrePaquete": "Aventura en la Patagonia Argentina",
+    "costoPaquete": 2600,
+    "hotel": true,
+    "ciudades": ["El Calafate", "Ushuaia"],
+    "tipoPaquete": "AVENTURA",
+    "pais": "Argentina",
+    "descripcion": "Explora los impresionantes paisajes de la Patagonia argentina con este paquete de aventura que te llevará desde el Glaciar Perito Moreno hasta el Fin del Mundo en Ushuaia. Incluye alojamiento en lodges de lujo y excursiones guiadas."
+  },
+  {
+    "nombrePaquete": "Exploración del Outback Australiano",
+    "costoPaquete": 2900,
+    "hotel": true,
+    "ciudades": ["Alice Springs", "Uluru"],
+    "tipoPaquete": "AVENTURA",
+    "pais": "Australia",
+    "descripcion": "Sumérgete en el desierto australiano con esta expedición al Outback, donde podrás explorar el icónico monolito de Uluru y conocer la cultura aborigen. Incluye alojamiento en campamentos de lujo y guías locales expertos."
+  },
+  {
+    "nombrePaquete": "Visita a los Castillos del Valle del Loira",
+    "costoPaquete": 2500,
+    "hotel": true,
+    "ciudades": ["Tours", "Amboise"],
+    "tipoPaquete": "CULTURAL",
+    "pais": "France",
+    "descripcion": "Descubre los majestuosos castillos del Valle del Loira en este tour cultural que te llevará a través de los viñedos y jardines más impresionantes de Francia. Incluye alojamiento en el lujoso Hotel Château de Rochecotte."
+  },
+  {
+    "nombrePaquete": "Crucero por el Caribe",
+    "costoPaquete": 2800,
+    "hotel": true,
+    "ciudades": ["San Juan", "Nassau", "Cozumel"],
+    "tipoPaquete": "CRUCERO",
+    "pais": "Bahamas",
+    "descripcion": "Embárcate en un crucero de lujo por el Caribe, visitando playas paradisíacas en Bahamas, Puerto Rico y México. Disfruta de una experiencia todo incluido a bordo, con actividades de entretenimiento, excursiones guiadas y relax en los mejores resorts caribeños."
+  },
+  {
+    "nombrePaquete": "Aventura en el Parque Nacional Kruger",
+    "costoPaquete": 3500,
+    "hotel": true,
+    "ciudades": ["Johannesburgo", "Parque Nacional Kruger"],
+    "tipoPaquete": "AVENTURA",
+    "pais": "South Africa",
+    "descripcion": "Disfruta de un safari inolvidable en el Parque Nacional Kruger, hogar de los Cinco Grandes de África. Este paquete incluye alojamiento en lodges de lujo, safaris guiados y la oportunidad de ver elefantes, leones, rinocerontes, leopardos y búfalos en su hábitat natural."
+  },
+  {
+    "nombrePaquete": "Excursión a la Gran Muralla China",
+    "costoPaquete": 2200,
+    "hotel": true,
+    "ciudades": ["Pekín", "Mutianyu"],
+    "tipoPaquete": "HISTORICO",
+    "pais": "China",
+    "descripcion": "Descubre uno de los monumentos más impresionantes del mundo con este paquete que te lleva a recorrer la Gran Muralla China. Incluye alojamiento en hoteles de lujo en Pekín y una excursión privada a la sección de Mutianyu, lejos de las multitudes turísticas."
+  },
+  {
+    "nombrePaquete": "Escapada Romántica a Santorini",
+    "costoPaquete": 3000,
+    "hotel": true,
+    "ciudades": ["Santorini"],
+    "tipoPaquete": "PLAYA",
+    "pais": "Greece",
+    "descripcion": "Disfruta de una escapada romántica en la isla de Santorini, conocida por sus casas blancas con cúpulas azules. Este paquete incluye alojamiento en un resort de lujo con vistas al mar Egeo, cenas románticas y paseos en catamarán para explorar las calas y playas volcánicas."
+  },
+  {
+    "nombrePaquete": "Tour por los Castillos de Baviera",
+    "costoPaquete": 2500,
+    "hotel": true,
+    "ciudades": ["Múnich", "Füssen", "Neuschwanstein"],
+    "tipoPaquete": "HISTORICO",
+    "pais": "Germany",
+    "descripcion": "Explora los cuentos de hadas hechos realidad con este tour por los castillos más famosos de Baviera. Visita el castillo de Neuschwanstein y otros impresionantes palacios reales, mientras te hospedas en hoteles boutique que te transportarán a épocas pasadas."
+  },
+  {
+    "nombrePaquete": "Relajación en las Termas de Islandia",
+    "costoPaquete": 2400,
+    "hotel": true,
+    "ciudades": ["Reikiavik", "Blue Lagoon"],
+    "tipoPaquete": "AVENTURA",
+    "pais": "Iceland",
+    "descripcion": "Disfruta de un retiro de bienestar en Islandia, donde podrás relajarte en las famosas aguas termales de Blue Lagoon. Este paquete incluye alojamiento en un resort termal de lujo, excursiones a cascadas y géiseres, y la oportunidad de observar la aurora boreal."
+  },
+  {
+    "nombrePaquete": "Crucero por el Mediterráneo",
+    "costoPaquete": 3200,
+    "hotel": true,
+    "ciudades": ["Barcelona", "Roma", "Atenas"],
+    "tipoPaquete": "CRUCERO",
+    "pais": "Italy",
+    "descripcion": "Navega por las aguas del Mediterráneo con este lujoso crucero que te llevará por las costas de España, Italia y Grecia. Disfruta de ciudades históricas, exquisita gastronomía y días de relax en el mar, todo con la comodidad y el lujo de un barco de primera clase."
+  },
+  {
+    "nombrePaquete": "Aventura en las Montañas Rocosas",
+    "costoPaquete": 1900,
+    "hotel": false,
+    "ciudades": ["Denver", "Parque Nacional de las Montañas Rocosas"],
+    "tipoPaquete": "MONTAÑA",
+    "pais": "United States",
+    "descripcion": "Si eres amante de la naturaleza y la aventura, este paquete te llevará a explorar el impresionante Parque Nacional de las Montañas Rocosas. Incluye senderismo, observación de fauna y acampada en un entorno natural majestuoso. Este paquete no incluye hotel, ideal para los más aventureros."
+  },
+  {
+    "nombrePaquete": "Exploración del Mar Rojo",
+    "costoPaquete": 1800,
+    "hotel": true,
+    "ciudades": ["Sharm el-Sheij", "Hurghada"],
+    "tipoPaquete": "PLAYA",
+    "pais": "Egypt",
+    "descripcion": "Sumérgete en las aguas cristalinas del Mar Rojo con este paquete que incluye alojamiento en resorts de lujo, buceo en arrecifes de coral y visitas a las hermosas playas de Sharm el-Sheij y Hurghada. Ideal para amantes del buceo y el relax bajo el sol."
+  },
+  {
+    "nombrePaquete": "Viaje en Tren por los Alpes Suizos",
+    "costoPaquete": 2700,
+    "hotel": true,
+    "ciudades": ["Zúrich", "Interlaken", "Zermatt"],
+    "tipoPaquete": "MONTAÑA",
+    "pais": "Switzerland",
+    "descripcion": "Disfruta de un espectacular viaje en tren por los Alpes suizos, con vistas impresionantes a montañas, lagos y glaciares. Este paquete incluye alojamiento en lujosos hoteles alpinos y paradas en destinos icónicos como Interlaken y Zermatt, hogar del famoso monte Cervino."
+  },
+  {
+    "nombrePaquete": "Descubre la Costa Amalfitana",
+    "costoPaquete": 2600,
+    "hotel": true,
+    "ciudades": ["Nápoles", "Amalfi", "Positano"],
+    "tipoPaquete": "PLAYA",
+    "pais": "Italy",
+    "descripcion": "Explora la pintoresca Costa Amalfitana con este paquete que te llevará a recorrer sus encantadores pueblos costeros, acantilados y playas. Disfruta de la mejor gastronomía italiana y alójate en exclusivos resorts con vistas al mar Tirreno."
+  },
+  {
+    "nombrePaquete": "Tour de la Ruta del Whisky en Escocia",
+    "costoPaquete": 2300,
+    "hotel": true,
+    "ciudades": ["Edimburgo", "Speyside"],
+    "tipoPaquete": "CULTURAL",
+    "pais": "Scotland",
+    "descripcion": "Embárcate en un tour cultural por la famosa Ruta del Whisky de Escocia, donde podrás visitar destilerías legendarias en la región de Speyside. El paquete incluye degustaciones, visitas guiadas y alojamiento en castillos y mansiones históricas."
+  },
+  {
+    "nombrePaquete": "Aventura en el Desierto de Atacama",
+    "costoPaquete": 2400,
+    "hotel": true,
+    "ciudades": ["San Pedro de Atacama"],
+    "tipoPaquete": "AVENTURA",
+    "pais": "Chile",
+    "descripcion": "Descubre el desierto más árido del mundo con este tour que te llevará a explorar los paisajes surrealistas del Desierto de Atacama. Incluye excursiones al Valle de la Luna, géiseres y salares, además de alojamiento en un hotel boutique en San Pedro de Atacama."
+  },
+  {
+    "nombrePaquete": "Safari por el Delta del Okavango",
+    "costoPaquete": 4000,
+    "hotel": true,
+    "ciudades": ["Maun", "Delta del Okavango"],
+    "tipoPaquete": "AVENTURA",
+    "pais": "Botswana",
+    "descripcion": "Sumérgete en la naturaleza salvaje del Delta del Okavango, uno de los destinos más espectaculares de África. Este safari de lujo incluye alojamiento en campamentos ecológicos y safaris guiados para observar la abundante vida salvaje en su entorno natural."
+  },
+  {
+    "nombrePaquete": "Escapada de Invierno a Quebec",
+    "costoPaquete": 2100,
+    "hotel": true,
+    "ciudades": ["Quebec", "Mont-Tremblant"],
+    "tipoPaquete": "INVIERNO",
+    "pais": "Canada",
+    "descripcion": "Disfruta de una escapada invernal en Quebec, donde podrás practicar esquí, patinaje sobre hielo y disfrutar de paisajes nevados. El paquete incluye alojamiento en cabañas de montaña y excursiones para explorar el encantador pueblo de Mont-Tremblant."
+  }
+]

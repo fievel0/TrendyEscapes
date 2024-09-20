@@ -9,4 +9,7 @@ public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 
     Optional<Cliente> findClienteByAutenticacionEmail(String email);
 
+    boolean existsByAutenticacionEmail(String email);
+
+    boolean existsByNumDocumento(String documento);
 }

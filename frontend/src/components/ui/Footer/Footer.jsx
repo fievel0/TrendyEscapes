@@ -1,9 +1,23 @@
+import { useLocation } from 'react-router-dom';
 import './Footer.css'
+import { useEffect, useState } from 'react';
 
 const Footer = () => {
+    const [isHome, setIsHome] = useState(null)
+
+    /* esconder el footer en home */
+    const location = useLocation();
+    useEffect(() => {
+        if (location.pathname === '/') {
+            setIsHome(true)
+        } else {
+            setIsHome(false)
+        }
+    }, [location.pathname]) 
+
     
   return (
-    <footer className="w-screen flex flex-col items-start justify-center gap-4 py-5 border-t border-t-gray-400">
+    <footer className={isHome ? 'hidden' : 'w-screen flex flex-col items-start justify-center gap-4 py-5 border-t border-t-gray-400'}>
         <div className='w-screen flex mobile:flex-col items-start mobile:items-center justify-evenly mb-6'>
             <div className="w-[230px] mobile:w-[250px] mobile:mb-10 flex-col content-around justify-center ">
                 <h3 className="text-xl  text-primary mb-3">Trendy Escapes</h3>
@@ -13,12 +27,12 @@ const Footer = () => {
             <div className="w-[150px] mobile:w-[250px] mobile:mb-10 flex flex-col items-start content-center justify-center ">
                 <h3 className="text-xl  text-primary mb-3">Enlaces Rápidos</h3>
                 <a href="/">Home</a>
-                <a href="/">Paquetes</a>
+                <a href="/packages">Paquetes</a>
                 <a href="/contact">Contacto</a>
                 <a href="/">Comunidad</a>
             </div>
 
-            <div className="w-[230px] mobile:w-[250px] mobile:mb-10 flex flex-col items-start content-around justify-center border-solid">
+            <div className="w-[250px] mobile:mb-10 flex flex-col items-start content-around justify-center border-solid">
                 <h3 className="text-xl  text-primary mb-3">Contacto</h3>
                 <div className="flex flex-wrap content-around justify-start gap-2">
                     <img src="../Icons/location.svg" alt="icono de ubicación" className='w-8 h-8 footerIcon' />
