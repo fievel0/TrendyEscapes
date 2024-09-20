@@ -1,19 +1,19 @@
 # Usar OpenJDK 19 como imagen base
-FROM openjdk:19-jdk AS build
+FROM openjdk:19-alpine AS build
 WORKDIR /app
+
+# Instalar Maven
+RUN apk add --no-cache maven
 
 # Copiar pom.xml y src desde el subdirectorio Backend
 COPY Backend/pom.xml ./
 COPY Backend/src ./src
 
-# Instalar Maven
-RUN apt-get update && apt-get install -y maven
-
 # Construir el proyecto y generar el JAR
 RUN mvn clean package -DskipTests
 
 # Etapa 2: Crear la imagen final
-FROM openjdk:19-jdk
+FROM openjdk:19-alpine
 VOLUME /tmp
 
 # Copiar el JAR generado desde la etapa de construcción
