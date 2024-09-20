@@ -1,23 +1,22 @@
-FROM amazoncorretto:19-alpine-jdk
-
-# Instalar Maven
-RUN apk add --no-cache maven
-
-# Establecer el directorio de trabajo dentro del contenedor
+# Importing JDK and copying required files
+FROM openjdk:19-jdk AS build
 WORKDIR /app
+COPY pom.xml .
+COPY src src
 
-# Copiar pom.xml y src desde el subdirectorio Backend
-COPY Backend/pom.xml ./
-COPY Backend/src ./src
+# Copy Maven wrapper
+COPY mvnw .
+COPY .mvn .mvn
 
-# Ejecutar Maven para construir el proyecto y generar el JAR
-RUN mvn clean package -DskipTests
+# Set execution permission for the Maven wrapper
+RUN chmod +x ./mvnw
+RUN ./mvnw clean package -DskipTests
 
-# Verificar que el archivo JAR esté en el directorio target
-RUN ls target/
+# Stage 2: Create the final Docker image using OpenJDK 19
+FROM openjdk:19-jdk
+VOLUME /tmp
 
-# Copiar el archivo JAR generado desde el directorio target
-COPY target/backend-0.0.1-SNAPSHOT.jar app.jar
-
-# Ejecutar la aplicación con el archivo JAR generado
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Copy the JAR from the build stage
+COPY --from=build /app/target/*.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
+EXPOSE 8080
