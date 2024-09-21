@@ -16,12 +16,12 @@ Con Trendy Escapes, explorar el mundo y documentar cada paso del viaje nunca fue
 ### Miembros del equipo
 | Nombre y Apellido   | Rol                                           |
 |---------------------|-----------------|----------------------------------------|---------------------------------------|
-| Mercedes Soto Bejarano          | Frontend   | [LinkedIn](https://ar.linkedin.com/in/emilce-mercedes-soto-bejarano) | [Visita mi repositorio](https://github.com/MerSb) |
-| Eneas Baroni         | Frontend          | [LinkedIn](https://www.linkedin.com/in/eneasbaroni) |[Visita mi repositorio](https://github.com/eneasbaroni) |
-| Álvaro Johansen      | Frontend      | [LinkedIn](https://www.linkedin.com/in/%C3%A1lvaro-johansen-bb147a246) | [Visita mi repositorio](https://github.com/Alvarojohansen) |
-| Fabian Paucar         | Backend          | [LinkedIn](https://www.linkedin.com/in/fabian-paucar/) | [Visita mi repositorio](https://github.com/fievel0) |
-| Julian David Peña      | Backend      | [LinkedIn](https://www.linkedin.com/in/julian-pena-java) | [Visita mi repositorio](https://github.com/julian-pena) |
-| Jorge Peyrano      | QA Tester      | [LinkedIn](https://www.linkedin.com/in/jorge-peyrano) | [Visita mi repositorio](https://github.com/Japeyr) |
+-| Mercedes Soto Bejarano          | Frontend   | [LinkedIn](https://ar.linkedin.com/in/emilce-mercedes-soto-bejarano) | [Visita mi repositorio](https://github.com/MerSb) |
+-| Eneas Baroni         | Frontend          | [LinkedIn](https://www.linkedin.com/in/eneasbaroni) |[Visita mi repositorio](https://github.com/eneasbaroni) |
+-| Álvaro Johansen      | Frontend      | [LinkedIn](https://www.linkedin.com/in/%C3%A1lvaro-johansen-bb147a246) | [Visita mi repositorio](https://github.com/Alvarojohansen) |
+-| Fabian Paucar         | Backend          | [LinkedIn](https://www.linkedin.com/in/fabian-paucar/) | [Visita mi repositorio](https://github.com/fievel0) |
+-| Julian David Peña      | Backend      | [LinkedIn](https://www.linkedin.com/in/julian-pena-java) | [Visita mi repositorio](https://github.com/julian-pena) |
+-| Jorge Peyrano      | QA Tester      | [LinkedIn](https://www.linkedin.com/in/jorge-peyrano) | [Visita mi repositorio](https://github.com/Japeyr) |
 
 ### Enlace Figma: 
 https://www.figma.com/proto/uvfHwC4zivsyawLNDCnO10/Book-de-Viajes-No-Country-wireframe?node-id=214-1556&node-type=CANVAS&t=HXeZohBYd5fSW8tP-0&scaling=min-zoom&content-scaling=fixed&page-id=214%3A1556&starting-point-node-id=214%3A1557
