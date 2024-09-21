@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # C20-44-n-java-react
 ## Proyecto Trendy Escapes
 
@@ -57,3 +58,7 @@ https://github.com/user-attachments/assets/b9aa1895-f171-4365-bf04-1eb3bdae1d8f
 
 
 
+=======
+# trendyescapes
+Agencia de Viajes
+>>>>>>> b0ca1ce96d884c4d3a9a8107fbcc67acae5f4aca
