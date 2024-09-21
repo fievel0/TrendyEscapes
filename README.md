@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# C20-44-n-java-react
+# PROYECTO GRUPAL
 ## Proyecto Trendy Escapes
 
 ### Descripción
@@ -15,7 +14,7 @@ Con Trendy Escapes, explorar el mundo y documentar cada paso del viaje nunca fue
 <image src="./images/dkt01.png" alt="imagen de paquetes" width="600" caption="Imagen de Paquetes"/>
 
 ### Miembros del equipo
-| Nombre y Apellido   | Rol             | ![LinkedIn](https://github.com/No-Country-simulation/c20-44-n-java-react/blob/main/icons8-logotipo-de-linkedin-48.png)                               | ![GitHub](https://github.com/No-Country-simulation/c20-44-n-java-react/blob/main/icons8-github-48.png)                                |
+| Nombre y Apellido   | Rol                                           |
 |---------------------|-----------------|----------------------------------------|---------------------------------------|
 | Mercedes Soto Bejarano          | Frontend   | [LinkedIn](https://ar.linkedin.com/in/emilce-mercedes-soto-bejarano) | [Visita mi repositorio](https://github.com/MerSb) |
 | Eneas Baroni         | Frontend          | [LinkedIn](https://www.linkedin.com/in/eneasbaroni) |[Visita mi repositorio](https://github.com/eneasbaroni) |
@@ -61,4 +60,3 @@ https://github.com/user-attachments/assets/b9aa1895-f171-4365-bf04-1eb3bdae1d8f
 =======
 # trendyescapes
 Agencia de Viajes
->>>>>>> b0ca1ce96d884c4d3a9a8107fbcc67acae5f4aca
